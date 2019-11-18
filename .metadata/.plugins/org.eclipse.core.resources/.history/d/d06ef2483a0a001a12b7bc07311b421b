@@ -1,0 +1,23 @@
+<html>
+  <head>
+    <!-- this is my CSS via cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
+  </head>
+  <body>
+    <div class="row">
+      <form class="col s12 m6 card">
+        <div class="row center">
+          <h4>Materialize DateTime Picker</h4>
+          <div class="input-field col s12 m12">
+            <input id="dtp" type="date" class="datepicker">
+            <label for="dtp">Birthday</label>
+          </div>
+        </div>
+      </form>
+    </div>
+    
+    <!-- this is my JS via cdn -->
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+  </body>
+</html>

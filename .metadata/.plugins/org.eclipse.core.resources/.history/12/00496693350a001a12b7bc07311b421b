@@ -1,0 +1,15 @@
+package com.lf.sinosi.service;
+
+import java.util.List;
+
+import com.lf.sinosi.model.Municipio;
+
+public interface MunicipioService {
+
+	void salvar(Municipio municipio);
+
+	Municipio buscarPorId(Integer id);
+
+	List<Municipio> listar();
+
+}

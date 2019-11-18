@@ -1,0 +1,14 @@
+package com.lf.sino.service;
+
+import java.util.List;
+
+import com.lf.sino.model.Denuncia;
+
+public interface DenunciaService {
+
+	void salvar(Denuncia denuncia);
+
+	Denuncia buscarPorId(Integer id);
+
+	List<Denuncia> listar();
+}

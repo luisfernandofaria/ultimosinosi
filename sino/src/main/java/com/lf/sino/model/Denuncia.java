@@ -1,0 +1,104 @@
+package com.lf.sino.model;
+
+import java.time.LocalDateTime;
+
+import javax.persistence.Entity;
+import javax.persistence.JoinColumn;
+import javax.persistence.ManyToOne;
+import javax.persistence.Table;
+
+@SuppressWarnings("serial")
+@Entity
+@Table(name = "DENUNCIAS")
+public class Denuncia extends AbstractEntity<Integer> {
+
+	@ManyToOne
+	@JoinColumn(name = "id_localacidente_fk")
+	private LocalAcidente localAcidente;
+
+	private String descricao;
+	private LocalDateTime dataDenuncia = LocalDateTime.now();
+	private String foto;
+	private String autorDano;
+	private String emailUsuario;
+	private String categoria;
+
+	public Denuncia() {
+	}
+
+	public void setCategoria(String categoria) {
+		this.categoria = categoria;
+	}
+
+	public void setDescricaoDenuncia(String descricao) {
+		this.descricao = descricao;
+	}
+
+	public LocalDateTime getDataDenuncia() {
+		return dataDenuncia;
+	}
+
+	public void setDataDenuncia(LocalDateTime dataDenuncia) {
+		this.dataDenuncia = dataDenuncia;
+	}
+
+	public void setDescricao(String descricao) {
+		this.descricao = descricao;
+	}
+
+	public LocalDateTime getDataDescricao() {
+		return dataDenuncia;
+	}
+
+	public void setDataDescricao(LocalDateTime dataDenuncia) {
+		this.dataDenuncia = dataDenuncia;
+	}
+
+	public String getCategoria() {
+		return categoria;
+	}
+
+	public String getDescricao() {
+		return descricao;
+	}
+
+	public LocalAcidente getLocalAcidente() {
+		return localAcidente;
+	}
+
+	public void setLocalAcidente(LocalAcidente localAcidente) {
+		this.localAcidente = localAcidente;
+	}
+
+	public String getAutorDano() {
+		return autorDano;
+	}
+
+	public void setAutorDano(String autorDano) {
+		this.autorDano = autorDano;
+	}
+
+	public String getEmailUsuario() {
+		return emailUsuario;
+	}
+
+	public void setEmailUsuario(String emailUsuario) {
+		this.emailUsuario = emailUsuario;
+	}
+
+	@Override
+	public String toString() {
+		return "Denuncia{" + " localAcidente=" + localAcidente + ", descricaoDenuncia='" + descricao + '\'' + ", data="
+				+ dataDenuncia + ", autorDano='" + autorDano + '\'' + ", emailUsuario='" + emailUsuario + '\''
+				+ ", categoria='" + categoria + '\'' + '}';
+	}
+
+	public String getFoto() {
+		return foto;
+	}
+
+	public void setFoto(String foto) {
+		this.foto = foto;
+	}
+
+}

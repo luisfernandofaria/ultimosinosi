@@ -1,0 +1,13 @@
+package com.lf.sino.model;
+
+import java.io.Serializable;
+
+import javax.persistence.*;
+
+public class AbstractEntity <ID extends Serializable> implements Serializable {
+
+	@Id @GeneratedValue (strategy = GenerationType.IDENTITY)
+	private ID id;
+	
+	
+}

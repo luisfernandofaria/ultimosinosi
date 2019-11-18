@@ -1,0 +1,7 @@
+package com.lf.sino.repository;
+
+import org.springframework.data.jpa.repository.JpaRepository;
+
+public interface LocalAcidenteRepository extends JpaRepository<LocalAidente, Integer>{
+
+}

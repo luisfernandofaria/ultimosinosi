@@ -1,0 +1,99 @@
+package com.lf.sino.model;
+
+import javax.persistence.CascadeType;
+import javax.persistence.Entity;
+import javax.persistence.ManyToOne;
+
+@Entity
+public class LocalAcidente extends AbstractEntity<Integer> {
+
+    private String latitude;
+    private String longitude;
+    private String endereco;
+    
+    @ManyToOne(cascade=CascadeType.ALL)
+    private String municipio;
+    
+    private String cep;
+    private String complemento = "";
+
+    public LocalAcidente() {
+    }
+
+    public LocalAcidente(String latitude, String longitude, String endereco, String municipio, String cep) {
+        this.latitude = latitude;
+        this.longitude = longitude;
+        this.endereco = endereco;
+        this.municipio = municipio;
+        this.cep = cep;
+    }
+
+    public LocalAcidente(String latitude, String longitude, String endereco, String municipio, String cep, String complemento) {
+        this.latitude = latitude;
+        this.longitude = longitude;
+        this.endereco = endereco;
+        this.municipio = municipio;
+        this.cep = cep;
+        this.complemento = complemento;
+    }
+
+    public String getLatitude() {
+        return latitude;
+    }
+
+    public void setLatitude(String latitude) {
+        this.latitude = latitude;
+    }
+
+    public String getLongitude() {
+        return longitude;
+    }
+
+    public void setLongitude(String longitude) {
+        this.longitude = longitude;
+    }
+
+    public String getEndereco() {
+        return endereco;
+    }
+
+    public void setEndereco(String endereco) {
+        this.endereco = endereco;
+    }
+
+    public String getString() {
+        return municipio;
+    }
+
+    public void setString(String municipio) {
+        this.municipio = municipio;
+    }
+
+    public String getCep() {
+        return cep;
+    }
+
+    public void setCep(String cep) {
+        this.cep = cep;
+    }
+
+    public String getComplemento() {
+        return complemento;
+    }
+
+    public void setComplemento(String complemento) {
+        this.complemento = complemento;
+    }
+
+    @Override
+    public String toString() {
+        return "LocalizacaoAcidente{" +
+                "latitude='" + latitude + '\'' +
+                ", longitude='" + longitude + '\'' +
+                ", endereco='" + endereco + '\'' +
+                ", municipio=" + municipio +
+                ", cep='" + cep + '\'' +
+                ", complemento='" + complemento + '\'' +
+                '}';
+    }
+}

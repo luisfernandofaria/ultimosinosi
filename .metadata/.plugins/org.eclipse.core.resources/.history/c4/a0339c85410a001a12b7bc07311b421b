@@ -1,0 +1,45 @@
+package com.lf.sino.controller;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+import org.springframework.transaction.annotation.Transactional;
+import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.ModelAttribute;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+import com.lf.sino.model.Denuncia;
+import com.lf.sino.repository.DenunciaRepository;
+
+@Controller
+@RequestMapping("/denuncias")
+public class DenunciaController {
+	
+	@Autowired
+	DenunciaRepository denunciaRepository;
+	
+	@GetMapping("/cadastrar")
+	public String cadastrarDenuncia( Model model) {
+		model.addAttribute("denuncia", new Denuncia());
+		return "denuncia/registrar";
+	}
+	
+	@GetMapping("/listar")
+	public String listarDenuncias(Model model) {
+		model.addAttribute("denuncia", new Denuncia());
+		return "/listar";
+	}
+	
+
+
+	@PostMapping("/denuncia/registrar")
+	public String salvar(@ModelAttribute Denuncia denuncia) {
+		return "redirect:/";
+	}
+
+	@Transactional(readOnly = true)
+	@GetMapping("/teste")
+	public void testar() {
+	}
+}
