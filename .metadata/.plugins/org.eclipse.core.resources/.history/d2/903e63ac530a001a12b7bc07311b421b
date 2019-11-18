@@ -15,7 +15,7 @@ public class Denuncia extends AbstractEntity<Integer> {
 	@ManyToOne
 	@JoinColumn(name = "id_localacidente_fk")
 	private LocalAcidente localAcidente;
-
+	
 	private String descricao;
 	private LocalDateTime dataDenuncia = LocalDateTime.now();
 	private String foto;
@@ -86,19 +86,6 @@ public class Denuncia extends AbstractEntity<Integer> {
 		this.foto = foto;
 	}
 
-	public LocalAcidente getLocalAcidente() {
-		return localAcidente;
-	}
 
-	public void setLocalAcidente(LocalAcidente localAcidente) {
-		this.localAcidente = localAcidente;
-	}
-
-	@Override
-	public String toString() {
-		return "Denuncia [localAcidente=" + localAcidente + ", descricao=" + descricao + ", dataDenuncia="
-				+ dataDenuncia + ", foto=" + foto + ", autorDano=" + autorDano + ", emailUsuario=" + emailUsuario
-				+ ", categoria=" + categoria + "]";
-	}
 
 }

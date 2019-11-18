@@ -62,6 +62,14 @@ public class Denuncia extends AbstractEntity<Integer> {
 		return descricao;
 	}
 
+	public LocalAcidente getLocalAcidente() {
+		return localAcidente;
+	}
+
+	public void setLocalAcidente(LocalAcidente localAcidente) {
+		this.localAcidente = localAcidente;
+	}
+
 	public String getAutorDano() {
 		return autorDano;
 	}
@@ -78,27 +86,19 @@ public class Denuncia extends AbstractEntity<Integer> {
 		this.emailUsuario = emailUsuario;
 	}
 
+	@Override
+	public String toString() {
+		return "Denuncia{" + " localAcidente=" + localAcidente + ", descricaoDenuncia='" + descricao + '\'' + ", data="
+				+ dataDenuncia + ", autorDano='" + autorDano + '\'' + ", emailUsuario='" + emailUsuario + '\''
+				+ ", categoria='" + categoria + '\'' + '}';
+	}
+
 	public String getFoto() {
 		return foto;
 	}
 
 	public void setFoto(String foto) {
 		this.foto = foto;
-	}
-
-	public LocalAcidente getLocalAcidente() {
-		return localAcidente;
-	}
-
-	public void setLocalAcidente(LocalAcidente localAcidente) {
-		this.localAcidente = localAcidente;
-	}
-
-	@Override
-	public String toString() {
-		return "Denuncia [localAcidente=" + localAcidente + ", descricao=" + descricao + ", dataDenuncia="
-				+ dataDenuncia + ", foto=" + foto + ", autorDano=" + autorDano + ", emailUsuario=" + emailUsuario
-				+ ", categoria=" + categoria + "]";
 	}
 
 }

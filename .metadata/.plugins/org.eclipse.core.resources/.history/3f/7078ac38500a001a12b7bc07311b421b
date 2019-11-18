@@ -15,6 +15,11 @@ public class Municipio extends AbstractEntity<Integer> {
 	private Integer codigo;
 	private String nome;
 
+//	@ManyToMany
+//	private LocalAcidente localAcidente;
+
+	//@JoinColumn(name = "id_localacidente_fk")
+	
 	@Enumerated(EnumType.STRING)
 	private EnumUf uf;
 
@@ -31,6 +36,14 @@ public class Municipio extends AbstractEntity<Integer> {
 
 	public Integer getCodigo() {
 		return codigo;
+	}
+
+	public LocalAcidente getLocalAcidente() {
+		return localAcidente;
+	}
+
+	public void setLocalAcidente(LocalAcidente localAcidente) {
+		this.localAcidente = localAcidente;
 	}
 
 	public EnumUf getUf() {

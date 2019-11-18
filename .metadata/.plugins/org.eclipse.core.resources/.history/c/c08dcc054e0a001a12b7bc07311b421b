@@ -4,7 +4,7 @@ import javax.persistence.Entity;
 import javax.persistence.EnumType;
 import javax.persistence.Enumerated;
 import javax.persistence.JoinColumn;
-import javax.persistence.ManyToMany;
+import javax.persistence.ManyToOne;
 import javax.persistence.Table;
 
 @SuppressWarnings("serial")
@@ -31,6 +31,14 @@ public class Municipio extends AbstractEntity<Integer> {
 
 	public Integer getCodigo() {
 		return codigo;
+	}
+
+	public LocalAcidente getLocalAcidente() {
+		return localAcidente;
+	}
+
+	public void setLocalAcidente(LocalAcidente localAcidente) {
+		this.localAcidente = localAcidente;
 	}
 
 	public EnumUf getUf() {

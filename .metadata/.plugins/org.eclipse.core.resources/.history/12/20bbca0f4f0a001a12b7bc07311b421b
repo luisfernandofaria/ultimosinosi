@@ -4,9 +4,8 @@ import java.util.List;
 
 import javax.persistence.Entity;
 import javax.persistence.JoinColumn;
-import javax.persistence.JoinTable;
-import javax.persistence.ManyToMany;
 import javax.persistence.ManyToOne;
+import javax.persistence.OneToMany;
 import javax.persistence.Table;
 
 @SuppressWarnings("serial")
@@ -22,10 +21,7 @@ public class LocalAcidente extends AbstractEntity<Integer> {
 	@JoinColumn(name = "id_denuncia_fk")
 	private Denuncia denuncia;
 
-	@ManyToMany
-	@JoinTable(name = "LOCAIS_MUNICIPIOS", joinColumns = {
-			@JoinColumn(name = "local_acidente_id") }, inverseJoinColumns = {
-					@JoinColumn(name = "municipio_acidente_id") })
+	@OneToMany(mappedBy = "localAcidente")
 	private List<Municipio> municipios;
 
 	private String cep;
@@ -96,5 +92,5 @@ public class LocalAcidente extends AbstractEntity<Integer> {
 				+ ", municipios=" + municipios + ", cep=" + cep + ", complemento="
 				+ complemento + "]";
 	}
-
+	
 }

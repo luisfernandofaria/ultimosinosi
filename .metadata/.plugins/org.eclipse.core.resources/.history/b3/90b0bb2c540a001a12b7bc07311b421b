@@ -34,7 +34,7 @@ public class DenunciaController {
 	MunicipioRepository municipioRepository;
 	
 	@PostMapping("/lista")
-	public ArrayList<Denuncia> teste(@ResponseBody Denuncia denuncia){
+	public List<Denuncia> teste(@ResponseBody Denuncia denuncia){
 		List<Denuncia> listaDenuncia = new ArrayList<>();
 		listaDenuncia.add(denuncia);
 	}
