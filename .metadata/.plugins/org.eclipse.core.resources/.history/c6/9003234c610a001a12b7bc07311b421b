@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html layout:decorate="~{layout}">
+<head>
+    <meta charset="UTF-8"/>
+</head>
+<body class="grey lighten-3">
+
+<section class=layout-content" layout:fragment="corpo">
+
+    <h1 class="main-title center">Sinosi Web</h1>
+
+    <div class="row center">
+        <div class="col s12 m4 l4 waves-effect waves-light">
+            <a href="/denuncias/registrar">
+                <div class="card-panel hoverable z-depth-1 center grey lighten-4">
+                     <div class="truncate">Registrar Denúncia</div>
+                </div>
+            </a>
+
+
+        </div>
+    </div>
+    
+    </section>
+    
+</body>
+</html>
+

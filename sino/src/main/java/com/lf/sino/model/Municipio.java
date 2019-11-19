@@ -15,8 +15,10 @@ public class Municipio extends AbstractEntity<Integer> {
 	private Integer codigo;
 	private String nome;
 
-	@Enumerated(EnumType.STRING)
-	private EnumUf uf;
+	// Por que com enum não funciona?
+	// e qual a vantagem de usar enum?
+	// @Enumerated(EnumType.STRING)
+	private String uf;
 
 	public Municipio() {
 	}
@@ -33,11 +35,11 @@ public class Municipio extends AbstractEntity<Integer> {
 		return codigo;
 	}
 
-	public EnumUf getUf() {
+	public String getUf() {
 		return uf;
 	}
 
-	public void setUf(EnumUf uf) {
+	public void setUf(String uf) {
 		this.uf = uf;
 	}
 
@@ -45,8 +47,4 @@ public class Municipio extends AbstractEntity<Integer> {
 		this.codigo = codigo;
 	}
 
-	@Override
-	public String toString() {
-		return String.format("%s (%s)", nome, uf);
-	}
 }

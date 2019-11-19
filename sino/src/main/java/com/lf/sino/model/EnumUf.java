@@ -9,20 +9,20 @@ public enum EnumUf {
 	RN("RN", "Rio Grande do Norte"), RS("RS", "Rio Grande do Sul"), RO("RO", "Rondônia"), RR("RR", "Roraima"),
 	SC("SC", "Santa Catarina"), SP("SP", "São Paulo"), SE("SE", "Sergipe"), TO("TO", "Tocantins");
 
-	private String sigla;
-	private String descricao;
+	private final String sigla;
+	private String nome;
 
-	EnumUf(String sigla, String descricao) {
+	EnumUf(String sigla, String nome) {
 		this.sigla = sigla;
-		this.descricao = descricao;
+		this.nome = nome;
 	}
 
 	public String getSigla() {
 		return sigla;
 	}
 
-	public String getDescricao() {
-		return descricao;
+	public String getNome() {
+		return nome;
 	}
 
 }

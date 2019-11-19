@@ -29,7 +29,6 @@ public class LocalAcidente extends AbstractEntity<Integer> {
 	private List<Municipio> municipios;
 
 	private String cep;
-	private String complemento;
 
 	public LocalAcidente() {
 	}
@@ -82,19 +81,10 @@ public class LocalAcidente extends AbstractEntity<Integer> {
 		this.cep = cep;
 	}
 
-	public String getComplemento() {
-		return complemento;
-	}
-
-	public void setComplemento(String complemento) {
-		this.complemento = complemento;
-	}
-
 	@Override
 	public String toString() {
 		return "LocalAcidente [latitude=" + latitude + ", longitude=" + longitude + ", endereco=" + endereco
-				+ ", municipios=" + municipios + ", cep=" + cep + ", complemento="
-				+ complemento + "]";
+				+ ", municipios=" + municipios + ", cep=" + cep + "]";
 	}
 
 }
