@@ -6,12 +6,12 @@ import javax.validation.Valid;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
-import org.springframework.ui.ModelMap;
 import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
 import com.lf.sino.model.Denuncia;
 import com.lf.sino.model.LocalAcidente;
@@ -33,37 +33,45 @@ public class DenunciaController {
 	@Autowired
 	MunicipioRepository municipioRepository;
 
+
 	@ModelAttribute("municipios")
 	public List<Municipio> listarMunicipios() {
 		return municipioRepository.findAll();
 	}
-
+	
 	@GetMapping("/localacidente")
 	public String preencherLocalAcidente(LocalAcidente localAcidente) {
 		localAcidenteRepository.save(localAcidente);
 		return "denuncia/localacidente";
 	}
-
+	
+//	@ModelAttribute("//")
+//	public LocalAcidente pegarLocal(Integer id) {
+//		return localAcidenteRepository.findById(id).get();
+//	}
+	
 //	@PostMapping("/avancarparadenuncia")
 //	public String enviarDadosLocalAcidente(@ModelAttribute @PathVariable("id") Integer id, ModelMap model) {
 //		model.addAttribute("localAcidente", localAcidenteRepository.findById(id));
 //		return "denuncia/dadosdenuncia";
 //	}
-
+	
+	
 	@PostMapping("/avancarparadenuncia")
-	public String salvar(@Valid LocalAcidente localAcidente, BindingResult result) {
-
+	public String salvar(@Valid LocalAcidente localAcidente, BindingResult result, RedirectAttributes attr) {
+		
 		localAcidenteRepository.save(localAcidente);
+		attr.addFlashAttribute("success", "Funcionário inserido com sucesso.");
 		return "denuncia/dadosdenuncia";
 	}
-
+	
+		
 	@PostMapping("/dadosdenuncia")
-	public String cadastrarDenuncia(ModelMap model) {
-
-		model.addAttribute("denuncia", new Denuncia());
+	public String cadastrarDenuncia(Denuncia denuncia) {
 		// localAcidenteRepository.save(localAcidente);
 		return "denuncia/localacidente";
-	}
+	}	
+
 
 //	@PostMapping("/registrar")
 //	public String salvar(@RequestBody Denuncia denuncia) {
