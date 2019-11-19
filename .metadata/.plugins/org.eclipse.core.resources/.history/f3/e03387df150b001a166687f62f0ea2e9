@@ -39,7 +39,7 @@ public class DenunciaController {
 
 	
 	// salvar denúncia
-	@PostMapping("/salvar")
+	@PostMapping("/salvar{id}")
 	public String salvarDenuncia(@PathVariable("id") Integer id, ModelMap model, @Valid Denuncia denuncia) {
 		model.addAttribute(localAcidenteRepository.findById(id));
 

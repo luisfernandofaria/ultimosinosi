@@ -6,9 +6,9 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 
 import com.lf.sino.model.Denuncia;
 import com.lf.sino.repository.DenunciaRepository;
@@ -40,7 +40,7 @@ public class DenunciaController {
 	
 	// salvar denúncia
 	@PostMapping("/salvar")
-	public String salvarDenuncia(@PathVariable("id") Integer id, ModelMap model, @Valid Denuncia denuncia) {
+	public String salvarDenuncia(@RequestParam("id") Integer id, ModelMap model, @Valid Denuncia denuncia) {
 		model.addAttribute(localAcidenteRepository.findById(id));
 
 		System.out.println("ID:::: " +id);
