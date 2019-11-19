@@ -1,0 +1,84 @@
+package com.lf.sino.controller;
+
+import java.util.List;
+
+import javax.validation.Valid;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+import org.springframework.validation.BindingResult;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.ModelAttribute;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.servlet.mvc.support.RedirectAttributes;
+
+import com.lf.sino.model.Denuncia;
+import com.lf.sino.model.LocalAcidente;
+import com.lf.sino.model.Municipio;
+import com.lf.sino.repository.DenunciaRepository;
+import com.lf.sino.repository.LocalAcidenteRepository;
+import com.lf.sino.repository.MunicipioRepository;
+
+@Controller
+@RequestMapping("/denuncias")
+public class DenunciaController {
+
+	@Autowired
+	DenunciaRepository denunciaRepository;
+
+	@Autowired
+	LocalAcidenteRepository localAcidenteRepository;
+
+	@Autowired
+	MunicipioRepository municipioRepository;
+
+	//buscar os municípios no banco de dados
+	@ModelAttribute("municipios")
+	public List<Municipio> listarMunicipios() {
+		return municipioRepository.findAll();
+	}
+
+	//mapear página de cadastro do local do acidente
+	@GetMapping("/localacidente")
+	public String preencherLocalAcidente(LocalAcidente localAcidente) {
+		return "denuncia/localacidente";
+	}
+
+	//salvar local do acidente
+//	@PostMapping("/salvarlocalacidente")
+//	public String salvarLocalAcidente(LocalAcidente localAcidente) {
+//		localAcidenteRepository.save(localAcidente);
+//		return "denuncia/dadosdenuncia";
+//	}
+
+	@PostMapping("/salvarlocalacidente")
+	public String salvar(@Valid LocalAcidente localAcidente, BindingResult result, RedirectAttributes attr) {
+		
+		localAcidenteRepository.save(localAcidente);
+		attr.addFlashAttribute("success", "Cargo inserido com sucesso.");
+		return "denuncia/dadosdenuncia";
+	}
+	
+	// -----------------------------------------------
+	//mapear página de cadastro de denúncia
+	@GetMapping("/dadosdenuncia")
+	public String cadastrarDenuncia(Denuncia denuncia) {
+
+		return "denuncia/dadosdenuncia";
+	}
+
+//	@PostMapping("/registrar")
+//	public String salvar(@RequestBody Denuncia denuncia) {
+//		System.out.println(denuncia);
+//
+//		// denunciaRepository.save(denuncia);
+//		return "redirect:/";
+//	}
+
+//
+//	@Transactional(readOnly = true)
+//	@GetMapping("/teste")
+//	public void testar() {
+//	}
+}

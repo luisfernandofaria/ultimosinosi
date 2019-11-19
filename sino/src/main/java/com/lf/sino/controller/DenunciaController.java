@@ -6,12 +6,11 @@ import javax.validation.Valid;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
-import org.springframework.ui.ModelMap;
-import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
 import com.lf.sino.model.Denuncia;
 import com.lf.sino.model.LocalAcidente;
@@ -21,7 +20,7 @@ import com.lf.sino.repository.LocalAcidenteRepository;
 import com.lf.sino.repository.MunicipioRepository;
 
 @Controller
-@RequestMapping("/denuncias")
+@RequestMapping("/")
 public class DenunciaController {
 
 	@Autowired
@@ -33,37 +32,111 @@ public class DenunciaController {
 	@Autowired
 	MunicipioRepository municipioRepository;
 
+	//buscar os municípios no banco de dados
 	@ModelAttribute("municipios")
 	public List<Municipio> listarMunicipios() {
 		return municipioRepository.findAll();
 	}
 
-	@GetMapping("/localacidente")
-	public String preencherLocalAcidente(LocalAcidente localAcidente) {
-		localAcidenteRepository.save(localAcidente);
-		return "denuncia/localacidente";
+	//mapear página de cadastro do local do acidente
+	@GetMapping("/localacidente/cadastrar")
+	public String cadastrarLocalAcidente(LocalAcidente localAcidente) {
+		System.out.println();
+		System.out.println("localAcidente dentro do método CADASTRAR(): "+ localAcidente);
+		System.out.println();
+		return "localacidente/cadastro";
 	}
+	
+	//salvar local do acidente
+	@PostMapping("/localacidente/salvar")
+	public String salvarLocalAcidente(@Valid LocalAcidente localAcidente, RedirectAttributes attr) {
+		
+		System.out.println();
+		System.out.println("funcionario dentro do método SALVAR(): "+ localAcidente);
+		System.out.println();
+		localAcidenteRepository.save(localAcidente);
+		attr.addFlashAttribute("success", "Local do acidente inserido com sucesso.");
+		return "redirect:/denuncia/cadastrar";
+	}
+	
+	//mapear página de cadastro da denúncia
+	@GetMapping("/denuncia/cadastrar")
+	public String cadastrarDenuncia (Denuncia denuncia) {
+		System.out.println();
+		System.out.println("denuncia dentro do método CADASTRAR(): "+ denuncia);
+		System.out.println();
+		return "denuncia/cadastro";
+	}
+	
+	//salvar denúncia
+	@PostMapping("/denuncia/salvar")
+	public String salvarDenuncia(@Valid Denuncia denuncia, RedirectAttributes attr) {
+		
+		System.out.println();
+		System.out.println("funcionario dentro do método SALVAR(): "+ denuncia);
+		System.out.println();
+		denunciaRepository.save(denuncia);
+		attr.addFlashAttribute("success", "Local do acidente inserido com sucesso.");
+		return "redirect:/";
+	}
+	
 
-//	@PostMapping("/avancarparadenuncia")
-//	public String enviarDadosLocalAcidente(@ModelAttribute @PathVariable("id") Integer id, ModelMap model) {
-//		model.addAttribute("localAcidente", localAcidenteRepository.findById(id));
+	
+	
+	
+	
+	
+	//mapear página de cadastro do local do acidente
+//	@GetMapping("/localacidente")
+//	public String preencherLocalAcidente(LocalAcidente localAcidente) {
+//		localAcidenteRepository.save(localAcidente);
+//		
+//		System.out.println("Local acidenteo dentro do método preencherLocalAcidente()");
+//		System.out.println(localAcidente);
+//		
+//		return "denuncia/localacidente";
+//	}
+	
+//	@GetMapping("/localacidente")
+//	public String preencherLocalAcidente(Model model) {
+//		
+//		model.addAttribute("localAcidente", new LocalAcidente());
+//		
+//		localAcidenteRepository.save(localAcidente);
+//		
+//		System.out.println("Local acidenteo dentro do método preencherLocalAcidente()");
+//		System.out.println(localAcidente);
+//		
+//		return "denuncia/localacidente";
+//	}
+
+	//salvar local do acidente
+//	@PostMapping("/salvarlocalacidente")
+//	public String salvarLocalAcidente(Model model) {
+//
+//		model.addAttribute("denuncia", new Denuncia());
+//		System.out.println("classe model");
+//		System.out.println(model.getClass().getName());
 //		return "denuncia/dadosdenuncia";
 //	}
 
-	@PostMapping("/avancarparadenuncia")
-	public String salvar(@Valid LocalAcidente localAcidente, BindingResult result) {
-
-		localAcidenteRepository.save(localAcidente);
-		return "denuncia/dadosdenuncia";
-	}
-
-	@PostMapping("/dadosdenuncia")
-	public String cadastrarDenuncia(ModelMap model) {
-
-		model.addAttribute("denuncia", new Denuncia());
-		// localAcidenteRepository.save(localAcidente);
-		return "denuncia/localacidente";
-	}
+//	@PostMapping("/salvarlocalacidente")
+//	public String salvar(@Valid LocalAcidente localAcidente, BindingResult result, RedirectAttributes attr) {
+//		
+//		localAcidenteRepository.save(localAcidente);
+//		attr.addFlashAttribute("success", "Cargo inserido com sucesso.");
+//		return "denuncia/dadosdenuncia";
+//	}
+	
+	// -----------------------------------------------
+	//mapear página de cadastro de denúncia
+//	@GetMapping("/dadosdenuncia")
+//	public String cadastrarDenuncia(Denuncia denuncia) {
+//		denunciaRepository.save(denuncia);
+//		System.out.println("Denuncia dentro do método cadastrarDenuncia()");
+//		System.out.println(denuncia);
+//		return "denuncia/dadosdenuncia";
+//	}
 
 //	@PostMapping("/registrar")
 //	public String salvar(@RequestBody Denuncia denuncia) {
@@ -73,47 +146,6 @@ public class DenunciaController {
 //		return "redirect:/";
 //	}
 
-//	
-//	@GetMapping("/listar")
-//	public String listarDenuncias(Model model) {
-//		model.addAttribute("denuncia", new Denuncia());
-//		return "/listar";
-//	}
-
-//	@GetMapping("/registrar")
-//	public String salvar(@RequestBody Denuncia denuncia) {
-//		System.out.println(denuncia);
-//		
-//		//denunciaRepository.save(denuncia);
-//		return "redirect:/";
-//	}
-
-	// métodos post para teste
-//	@PostMapping("/registrarLocalAcidente")
-//	public String salvarLocalAcidente(@RequestBody LocalAcidente localAcidente) {
-//		System.out.println(localAcidente);
-//		
-//		//denunciaRepository.save(denuncia);
-//		return "redirect:/";
-//	}
-//	
-//	
-//	@PostMapping("/registrarMunicipio")
-//	public String salvarMunicipio(@RequestBody Municipio municipio) {
-//		System.out.println(municipio);
-//		
-//		//denunciaRepository.save(denuncia);
-//		return "redirect:/";
-//	}
-//	
-//	
-//	@PostMapping("/cadastrarMunicipio")
-//	public String cadastrarMunicipio(@RequestBody Municipio municipio) {
-//		System.out.println(municipio);
-//		
-//		municipioRepository.save(municipio);
-//		return "redirect:/";
-//	}
 //
 //	@Transactional(readOnly = true)
 //	@GetMapping("/teste")

@@ -17,7 +17,7 @@ public class Denuncia extends AbstractEntity<Integer> {
 	private LocalAcidente localAcidente;
 
 	private String descricao;
-	private LocalDateTime dataDenuncia = LocalDateTime.now();
+	private LocalDateTime dataDenuncia;
 	private String foto;
 	private String autorDano;
 	private String emailUsuario;
