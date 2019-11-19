@@ -6,7 +6,7 @@ import javax.persistence.Entity;
 import javax.persistence.JoinColumn;
 import javax.persistence.JoinTable;
 import javax.persistence.ManyToMany;
-import javax.persistence.OneToMany;
+import javax.persistence.OneToOne;
 import javax.persistence.Table;
 
 @SuppressWarnings("serial")
@@ -18,9 +18,8 @@ public class LocalAcidente extends AbstractEntity<Integer> {
 	private String longitude;
 	private String endereco;
 
-	@OneToMany(mappedBy="")
-	@JoinColumn(name = "localAcidente")
-	private List<Denuncia> denuncias;
+	@OneToOne
+	private Denuncia denuncia;
 
 	@ManyToMany
 	@JoinTable(name = "LOCAIS_MUNICIPIOS", joinColumns = {
@@ -73,20 +72,18 @@ public class LocalAcidente extends AbstractEntity<Integer> {
 		this.cep = cep;
 	}
 
-	public List<Denuncia> getDenuncias() {
-		return denuncias;
+	public Denuncia getDenuncia() {
+		return denuncia;
 	}
 
-	public void setDenuncias(List<Denuncia> denuncias) {
-		this.denuncias = denuncias;
+	public void setDenuncia(Denuncia denuncia) {
+		this.denuncia = denuncia;
 	}
 
 	@Override
 	public String toString() {
 		return "LocalAcidente [latitude=" + latitude + ", longitude=" + longitude + ", endereco=" + endereco
-				+ ", denuncias=" + denuncias + ", municipios=" + municipios + ", cep=" + cep + "]";
+				+ ", denuncia=" + denuncia + ", municipios=" + municipios + ", cep=" + cep + "]";
 	}
-
-
 
 }

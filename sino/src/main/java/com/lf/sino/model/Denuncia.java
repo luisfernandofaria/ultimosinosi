@@ -3,8 +3,7 @@ package com.lf.sino.model;
 import java.time.LocalDateTime;
 
 import javax.persistence.Entity;
-import javax.persistence.JoinColumn;
-import javax.persistence.ManyToOne;
+import javax.persistence.OneToOne;
 import javax.persistence.Table;
 
 @SuppressWarnings("serial")
@@ -12,8 +11,8 @@ import javax.persistence.Table;
 @Table(name = "DENUNCIAS")
 public class Denuncia extends AbstractEntity<Integer> {
 
-	@ManyToOne
-	@JoinColumn(name = "id_localacidente_fk")
+	@OneToOne
+	//@JoinColumn(name = "id_localacidente_fk")
 	private LocalAcidente localAcidente;
 
 	private String descricao;

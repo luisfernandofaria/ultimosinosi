@@ -58,7 +58,11 @@
 
 					<div class="row">
 						<div class="input-field col s12 center">
-						<input type="hidden" id="id" th:field="*{id}"/>
+
+							<button class="btn waves-effect waves-light" type="reset"
+								onclick="goBack()">Voltar</button>
+
+							<input type="hidden" id="id" th:field="*{id}" />
 							<button class="btn waves-effect waves-light" type="submit"
 								name="action">Finalizar Denúncia</button>
 						</div>
@@ -68,6 +72,12 @@
 
 	</div>
 	<!-- Fim do formulario de edicao -->
+
+	<script>
+		function goBack() {
+			window.history.back();
+		}
+	</script>
 
 	<script type="text/javascript"
 		src="../materialize/js/materialize.min.js"></script>
