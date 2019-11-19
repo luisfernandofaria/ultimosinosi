@@ -48,4 +48,11 @@ public class LocalAcidenteController {
 		return new ModelAndView("redirect:/denuncia/cadastrar");
 	}
 
+	// get de municípios
+	@ResponseBody
+	@GetMapping("/municipios")
+	public List<Municipio> listarMunicipios() {
+		return municipioRepository.findAll();
+	}
+
 }

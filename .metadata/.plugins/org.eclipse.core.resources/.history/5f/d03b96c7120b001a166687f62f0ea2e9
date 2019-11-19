@@ -31,6 +31,8 @@ public class LocalAcidenteController {
 	// buscar a lista de municípios no banco de dados
 
 	@ModelAttribute("municipios")
+	@ResponseBody
+	@GetMapping("/municipios")
 	public List<Municipio> listarMunicipios() {
 		return municipioRepository.findAll();
 	}

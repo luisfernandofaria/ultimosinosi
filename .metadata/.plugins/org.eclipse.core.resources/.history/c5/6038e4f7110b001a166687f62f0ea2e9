@@ -22,19 +22,22 @@ import com.lf.sino.repository.MunicipioRepository;
 @RequestMapping("/localacidente")
 public class LocalAcidenteController {
 
+
 	@Autowired
 	MunicipioRepository municipioRepository;
-
+	
 	@Autowired
 	LocalAcidenteRepository localAcidenteRepository;
 
 	// buscar a lista de municípios no banco de dados
-
+	
 	@ModelAttribute("municipios")
+	@GetMapping("/municipios")
+	@ResponseBody
 	public List<Municipio> listarMunicipios() {
 		return municipioRepository.findAll();
 	}
-
+	
 	// mapear página de cadastro do local do acidente
 	@GetMapping("/cadastrar")
 	public String cadastrarLocalAcidente(LocalAcidente localAcidente) {
@@ -42,10 +45,17 @@ public class LocalAcidenteController {
 	}
 
 	// salvar local do acidente
+//	@PostMapping("/salvar")
+//	public String salvarLocalAcidente(@Valid LocalAcidente localAcidente, RedirectAttributes attr) {
+//		localAcidenteRepository.save(localAcidente);
+//		attr.addAttribute(localAcidente);
+//		return "redirect:/denuncia/cadastrar";
+//	}
+	
 	@PostMapping("/salvar")
 	public ModelAndView salvarLocalAcidente(@Valid LocalAcidente localAcidente) {
 		localAcidenteRepository.save(localAcidente);
 		return new ModelAndView("redirect:/denuncia/cadastrar");
 	}
-
+	
 }

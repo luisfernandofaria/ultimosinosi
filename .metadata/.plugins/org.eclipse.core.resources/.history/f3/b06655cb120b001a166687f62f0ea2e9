@@ -31,6 +31,7 @@ public class LocalAcidenteController {
 	// buscar a lista de municípios no banco de dados
 
 	@ModelAttribute("municipios")
+	@ResponseBody
 	public List<Municipio> listarMunicipios() {
 		return municipioRepository.findAll();
 	}
@@ -46,6 +47,13 @@ public class LocalAcidenteController {
 	public ModelAndView salvarLocalAcidente(@Valid LocalAcidente localAcidente) {
 		localAcidenteRepository.save(localAcidente);
 		return new ModelAndView("redirect:/denuncia/cadastrar");
+	}
+
+	// get de municípios
+	@ResponseBody
+	@GetMapping("/municipios")
+	public List<Municipio> listarMunicipios() {
+		return municipioRepository.findAll();
 	}
 
 }
