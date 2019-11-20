@@ -4,19 +4,26 @@ import java.time.LocalDateTime;
 
 import javax.persistence.CascadeType;
 import javax.persistence.Entity;
+import javax.persistence.FetchType;
 import javax.persistence.OneToOne;
 import javax.persistence.Table;
+
+import org.springframework.format.annotation.DateTimeFormat;
+import org.springframework.format.annotation.DateTimeFormat.ISO;
 
 @SuppressWarnings("serial")
 @Entity
 @Table(name = "DENUNCIAS")
 public class Denuncia extends AbstractEntity<Integer> {
 
-	@OneToOne (cascade = CascadeType.ALL)
+	@OneToOne(cascade = CascadeType.ALL, fetch = FetchType.LAZY)
 	private LocalAcidente localAcidente;
 
 	private String descricao;
+
+	@DateTimeFormat(iso = ISO.DATE_TIME)
 	private LocalDateTime dataDenuncia;
+
 	private String foto;
 	private String autorDano;
 	private String emailUsuario;

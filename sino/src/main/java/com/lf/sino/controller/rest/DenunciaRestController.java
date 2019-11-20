@@ -18,14 +18,14 @@ public class DenunciaRestController {
 
 	@Autowired
 	DenunciaRepository denunciaRepository;
-	
+
 	@GetMapping("/listar")
 	public List<Denuncia> listar() {
 		return denunciaRepository.findAll();
 	}
-	
-	@PostMapping
-	public Denuncia criarDenuncia (@RequestBody Denuncia denuncia) {
+
+	@PostMapping("/")
+	public Denuncia criarDenuncia(@RequestBody Denuncia denuncia) {
 		return denunciaRepository.save(denuncia);
 	}
 }

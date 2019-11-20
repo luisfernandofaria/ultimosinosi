@@ -1,0 +1,20 @@
+package com.lf.sino.controller.rest;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.GetMapping;
+
+import com.lf.sino.model.Denuncia;
+import com.lf.sino.repository.DenunciaRepository;
+
+public class DenunciaRestController {
+
+	@Autowired
+	DenunciaRepository denunciaRepository;
+	
+	@GetMapping("/listar")
+	public List<Denuncia> listar() {
+		return denunciaRepository.findAll();
+	}
+}
