@@ -2,6 +2,7 @@ package com.lf.sino.model;
 
 import java.util.List;
 
+import javax.persistence.CascadeType;
 import javax.persistence.Entity;
 import javax.persistence.JoinColumn;
 import javax.persistence.JoinTable;
@@ -18,7 +19,7 @@ public class LocalAcidente extends AbstractEntity<Integer> {
 	private String longitude;
 	private String endereco;
 
-	@OneToOne
+	@OneToOne (cascade = CascadeType.ALL)
 	private Denuncia denuncia;
 
 	@ManyToMany

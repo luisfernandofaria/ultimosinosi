@@ -2,6 +2,7 @@ package com.lf.sino.model;
 
 import java.time.LocalDateTime;
 
+import javax.persistence.CascadeType;
 import javax.persistence.Entity;
 import javax.persistence.OneToOne;
 import javax.persistence.Table;
@@ -11,8 +12,7 @@ import javax.persistence.Table;
 @Table(name = "DENUNCIAS")
 public class Denuncia extends AbstractEntity<Integer> {
 
-	@OneToOne
-	//@JoinColumn(name = "id_localacidente_fk")
+	@OneToOne (cascade = CascadeType.ALL)
 	private LocalAcidente localAcidente;
 
 	private String descricao;
