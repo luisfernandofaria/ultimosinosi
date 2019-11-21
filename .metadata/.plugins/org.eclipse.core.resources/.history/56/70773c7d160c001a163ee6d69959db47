@@ -21,7 +21,7 @@ public class Denuncia extends AbstractEntity<Integer> {
 
 	private String descricao;
 
-	@JsonFormat(pattern = "dd/MM/yyyy HH:mm")
+	@JsonFormat(pattern = "yyyy/MM/dd HH:mm")
 	private LocalDateTime dataDenuncia;
 
 	private String foto;
