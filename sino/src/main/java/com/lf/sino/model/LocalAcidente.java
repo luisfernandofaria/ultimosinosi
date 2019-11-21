@@ -6,7 +6,6 @@ import javax.persistence.Entity;
 import javax.persistence.JoinColumn;
 import javax.persistence.JoinTable;
 import javax.persistence.ManyToMany;
-import javax.persistence.OneToOne;
 import javax.persistence.Table;
 
 @SuppressWarnings("serial")
@@ -17,11 +16,6 @@ public class LocalAcidente extends AbstractEntity<Integer> {
 	private String latitude;
 	private String longitude;
 	private String endereco;
-
-	// como fazer???
-	@OneToOne
-	@JoinColumn(name = "denuncia_id")
-	private Denuncia denuncia;
 
 	@ManyToMany
 	@JoinTable(name = "LOCAIS_MUNICIPIOS", joinColumns = {
@@ -74,18 +68,11 @@ public class LocalAcidente extends AbstractEntity<Integer> {
 		this.cep = cep;
 	}
 
-	public Denuncia getDenuncia() {
-		return denuncia;
-	}
-
-	public void setDenuncia(Denuncia denuncia) {
-		this.denuncia = denuncia;
-	}
 
 	@Override
 	public String toString() {
 		return "LocalAcidente [latitude=" + latitude + ", longitude=" + longitude + ", endereco=" + endereco
-				+ ", denuncia=" + denuncia + ", municipios=" + municipios + ", cep=" + cep + "]";
+				+ ",  +  municipios=" + municipios + ", cep=" + cep + "]";
 	}
 
 }

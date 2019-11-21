@@ -13,7 +13,7 @@ import com.lf.sino.model.Denuncia;
 import com.lf.sino.repository.DenunciaRepository;
 
 @RestController
-@RequestMapping("rest/denuncia")
+@RequestMapping("rest/denuncias")
 public class DenunciaRestController {
 
 	@Autowired
@@ -24,7 +24,7 @@ public class DenunciaRestController {
 		return denunciaRepository.findAll();
 	}
 
-	@PostMapping("/")
+	@PostMapping("/denuncia")
 	public Denuncia criarDenuncia(@RequestBody Denuncia denuncia) {
 		return denunciaRepository.save(denuncia);
 	}
