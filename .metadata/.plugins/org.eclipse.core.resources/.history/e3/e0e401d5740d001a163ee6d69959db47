@@ -1,0 +1,47 @@
+package com.lf.sino.service;
+
+import java.net.MalformedURLException;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.nio.file.Paths;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.core.io.Resource;
+import org.springframework.core.io.UrlResource;
+import org.springframework.stereotype.Service;
+
+import com.lf.sino.exception.FileStorageException;
+import com.lf.sino.exception.MyFileNotFoundException;
+import com.lf.sino.upload.FileStorageProperties;
+
+@Service
+public class FileStorageService {
+
+	private final Path fileStorageLocation;
+
+	@Autowired
+	public FileStorageService(FileStorageProperties fileStorageProperties) {
+
+		this.fileStorageLocation = Paths.get(fileStorageProperties.getUploadDir()).toAbsolutePath().normalize();
+
+		try {
+			Files.createDirectories(this.fileStorageLocation);
+		} catch (Exception ex) {
+			throw new FileStorageException("Não foi possível criar o diretório para salvar os arquivos", ex);
+		}
+	}
+
+	public Resource loadFileAsResource(String fileName) {
+		try {
+			Path filePath = this.fileStorageLocation.resolve(fileName).normalize();
+			Resource resource = new UrlResource(filePath.toUri());
+			if (resource.exists()) {
+				return resource;
+			} else {
+				throw new MyFileNotFoundException("Arquivo não encontrado! " + fileName);
+			}
+		} catch (MalformedURLException ex) {
+			throw new MyFileNotFoundException("Arquivo não encontrado! " + fileName, ex);
+		}
+	}
+}

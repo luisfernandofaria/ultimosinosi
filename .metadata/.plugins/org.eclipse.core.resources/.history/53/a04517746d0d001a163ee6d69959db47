@@ -1,0 +1,5 @@
+package com.lf.sino.exception;
+
+public class MyFileNotFoundException {
+
+}

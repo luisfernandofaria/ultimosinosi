@@ -7,7 +7,7 @@ import javax.persistence.Entity;
 import javax.persistence.ManyToOne;
 import javax.persistence.Table;
 
-import org.springframework.format.annotation.DateTimeFormat;
+import org.hibernate.annotations.Type;
 
 import com.fasterxml.jackson.annotation.JsonFormat;
 
@@ -24,7 +24,8 @@ public class Denuncia extends AbstractEntity<Integer> {
 	@JsonFormat(pattern = "dd/MM/yyyy HH:mm")
 	private LocalDateTime dataDenuncia;
 
-	private String foto;
+	private String caminhoFoto;
+
 	private String autorDano;
 	private String emailUsuario;
 	private String categoria;
@@ -32,11 +33,19 @@ public class Denuncia extends AbstractEntity<Integer> {
 	public Denuncia() {
 	}
 
-	public void setCategoria(String categoria) {
-		this.categoria = categoria;
+	public LocalAcidente getLocalAcidente() {
+		return localAcidente;
 	}
 
-	public void setDescricaoDenuncia(String descricao) {
+	public void setLocalAcidente(LocalAcidente localAcidente) {
+		this.localAcidente = localAcidente;
+	}
+
+	public String getDescricao() {
+		return descricao;
+	}
+
+	public void setDescricao(String descricao) {
 		this.descricao = descricao;
 	}
 
@@ -48,24 +57,12 @@ public class Denuncia extends AbstractEntity<Integer> {
 		this.dataDenuncia = dataDenuncia;
 	}
 
-	public void setDescricao(String descricao) {
-		this.descricao = descricao;
+	public String getCaminhoFoto() {
+		return caminhoFoto;
 	}
 
-	public LocalDateTime getDataDescricao() {
-		return dataDenuncia;
-	}
-
-	public void setDataDescricao(LocalDateTime dataDenuncia) {
-		this.dataDenuncia = dataDenuncia;
-	}
-
-	public String getCategoria() {
-		return categoria;
-	}
-
-	public String getDescricao() {
-		return descricao;
+	public void setCaminhoFoto(String foto) {
+		this.caminhoFoto = foto;
 	}
 
 	public String getAutorDano() {
@@ -84,26 +81,18 @@ public class Denuncia extends AbstractEntity<Integer> {
 		this.emailUsuario = emailUsuario;
 	}
 
-	public String getFoto() {
-		return foto;
+	public String getCategoria() {
+		return categoria;
 	}
 
-	public void setFoto(String foto) {
-		this.foto = foto;
-	}
-
-	public LocalAcidente getLocalAcidente() {
-		return localAcidente;
-	}
-
-	public void setLocalAcidente(LocalAcidente localAcidente) {
-		this.localAcidente = localAcidente;
+	public void setCategoria(String categoria) {
+		this.categoria = categoria;
 	}
 
 	@Override
 	public String toString() {
 		return "Denuncia [localAcidente=" + localAcidente + ", descricao=" + descricao + ", dataDenuncia="
-				+ dataDenuncia + ", foto=" + foto + ", autorDano=" + autorDano + ", emailUsuario=" + emailUsuario
+				+ dataDenuncia + ", foto=" + caminhoFoto + ", autorDano=" + autorDano + ", emailUsuario=" + emailUsuario
 				+ ", categoria=" + categoria + "]";
 	}
 

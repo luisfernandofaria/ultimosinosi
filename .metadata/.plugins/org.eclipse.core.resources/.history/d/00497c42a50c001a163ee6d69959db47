@@ -1,0 +1,16 @@
+package com.lf.sino.model;
+
+public class teste {
+
+	
+	public static void main(String[] args) {
+		
+		
+		String nome = "ALURA";
+
+		nome.replace("AL", "qualquer");
+
+		System.out.println(nome);
+		
+	}
+}
