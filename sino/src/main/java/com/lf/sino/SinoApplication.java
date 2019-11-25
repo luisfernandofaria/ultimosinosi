@@ -4,11 +4,12 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.context.properties.EnableConfigurationProperties;
 
+import com.lf.sino.upload.FileSaver;
 import com.lf.sino.upload.FileStorageProperties;
 
 @SpringBootApplication
 @EnableConfigurationProperties({
-    FileStorageProperties.class
+    FileStorageProperties.class, FileSaver.class
 })
 public class SinoApplication {
 

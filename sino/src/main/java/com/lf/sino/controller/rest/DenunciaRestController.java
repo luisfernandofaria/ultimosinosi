@@ -2,13 +2,15 @@ package com.lf.sino.controller.rest;
 
 import java.util.List;
 
+import javax.validation.Valid;
+
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.multipart.MultipartFile;
 import org.springframework.web.servlet.support.ServletUriComponentsBuilder;
@@ -16,6 +18,7 @@ import org.springframework.web.servlet.support.ServletUriComponentsBuilder;
 import com.lf.sino.model.Denuncia;
 import com.lf.sino.repository.DenunciaRepository;
 import com.lf.sino.service.FileStorageService;
+import com.lf.sino.upload.FileSaver;
 import com.lf.sino.upload.UploadFileResponse;
 
 @RestController
@@ -24,6 +27,9 @@ public class DenunciaRestController {
 
 	@Autowired
 	private FileStorageService fileStorageService;
+
+	@Autowired
+	private FileSaver fileSaver;
 
 	@Autowired
 	DenunciaRepository denunciaRepository;
@@ -63,7 +69,6 @@ public class DenunciaRestController {
 //	}
 
 	@PostMapping("/uploadFile")
-	@ResponseBody
 	public UploadFileResponse uploadFile(@RequestParam("file") MultipartFile file,
 			@RequestParam("denuncia") Denuncia denuncia) {
 
@@ -78,6 +83,64 @@ public class DenunciaRestController {
 
 		return new UploadFileResponse(fileName, fileDownloadUri, file.getContentType(), file.getSize());
 	}
+	
+    @PostMapping("/upload")
+    public String upload(@RequestParam("file") MultipartFile file, 
+                         @RequestParam("denuncia") Denuncia denuncia) {
+        return denuncia + "\n" + file.getOriginalFilename() + "\n" + file.getSize();
+    }
+
+//	
+//
+//	@PostMapping("/mais")
+//	public void uploadFile(@RequestParam("denuncia") Denuncia denuncia, @RequestParam("file") MultipartFile file) {
+//		System.out.println(denuncia);
+//
+//		String caminho = fileSaver.write("", file);
+//		denuncia.setCaminhoFoto(caminho);
+//		denunciaRepository.save(denuncia);
+//
+//		System.out.println(" camihhoda::: " + denuncia.getCaminhoFoto());
+//	
+//	}
+
+
+//	@PostMapping("/novo")
+//	public ResponseEntity<String> receiveData(@RequestParam("file") MultipartFile file,
+//			@RequestParam("denuncia") Denuncia denuncia) {
+//
+//		System.out.println(denuncia);
+//
+//		String caminho = fileSaver.write("", file);
+//		denuncia.setCaminhoFoto(caminho);
+//		denunciaRepository.save(denuncia);
+//
+//		System.out.println(" camihhoda::: " + denuncia.getCaminhoFoto());
+//
+//		return ResponseEntity.ok("Deu certo!");
+//	}
+
+    @PostMapping("/send")
+    public ResponseEntity<String> receiveData(MultipartFile foto, @Valid Denuncia denuncia) {
+
+        System.out.println(denuncia);
+        System.out.println(foto.getOriginalFilename());
+
+        
+		String fileName = fileStorageService.storeFile(foto);
+
+		String fileDownloadUri = ServletUriComponentsBuilder.fromCurrentContextPath().path("/downloadFile/")
+				.path(fileName).toUriString();
+
+		denuncia.setCaminhoFoto(fileName);
+		denunciaRepository.save(denuncia);
+		
+		
+		System.out.println(" camihhoda::: " + denuncia.getCaminhoFoto());
+
+
+        return ResponseEntity.ok("Deu certo!");
+    }
 
 //	@PostMapping("/uploadFile")
 //	@ResponseBody
