@@ -1,7 +1,0 @@
-package com.lf.sino.repository;
-
-import com.lf.sino.model.Denuncia;
-
-public class DenunciaRepository extends JpaRepository<Denuncia, Integer>{
-
-}
