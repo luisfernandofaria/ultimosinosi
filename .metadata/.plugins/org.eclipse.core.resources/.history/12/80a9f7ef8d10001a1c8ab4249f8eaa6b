@@ -21,26 +21,25 @@ public class Denuncia extends AbstractEntity<Integer> {
 	@ManyToOne(cascade = CascadeType.ALL)
 	private LocalAcidente localAcidente;
 
-	@Column(nullable = false, length = 500)
+	@Column(length = 500)
 	@NotBlank(message = "Por favor, informe ao menos uma breve descrição do incidente!")
 	@Size(min = 10, max = 500, message = "Mínimo de 10 caracteres!")
 	private String descricao;
 
-	@Column(nullable = false)
 	@JsonFormat(pattern = "dd/MM/yyyy HH:mm")
 	private LocalDateTime dataDenuncia;
 
-	@Column(nullable = true, length = 200)
+	@Column(nullable = true)
 	private String caminhoFoto;
-
-	@Column(nullable = true, length = 60)
+	
+	@Column(nullable = true)
 	private String autorDano;
 
-	@Column(nullable = true, length = 60)
+	@Column(nullable = true)
 	@Email
 	private String emailUsuario;
 
-	@Column(nullable = false, length = 60)
+	@Column(nullable = false)
 	private String categoria;
 
 	public Denuncia() {

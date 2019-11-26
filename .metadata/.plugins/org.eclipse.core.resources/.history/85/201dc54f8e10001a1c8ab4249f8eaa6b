@@ -40,7 +40,7 @@ public class Denuncia extends AbstractEntity<Integer> {
 	@Email
 	private String emailUsuario;
 
-	@Column(nullable = false, length = 60)
+	@Column(nullable = false)
 	private String categoria;
 
 	public Denuncia() {

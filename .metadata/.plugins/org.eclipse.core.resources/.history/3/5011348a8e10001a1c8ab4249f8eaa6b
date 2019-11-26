@@ -1,7 +1,6 @@
 package com.lf.sino.model;
 
 import javax.persistence.CascadeType;
-import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.ManyToOne;
 import javax.persistence.Table;
@@ -13,20 +12,17 @@ import javax.validation.constraints.Size;
 @Table(name = "LOCAISDOSACIDENTES")
 public class LocalAcidente extends AbstractEntity<Integer> {
 
-	@Column(nullable = true, length = 60)
 	private String latitude;
 	private String longitude;
-
-	@Column(nullable = true, length = 60)
+	
 	@NotBlank(message = "Endereço não pode ficar vazio!")
-	@Size(min = 5, max = 60)
+	@Size(min=5, max=40)
 	private String endereco;
 
 	@ManyToOne(cascade = CascadeType.DETACH)
 	private Municipio municipio;
 
-	@Column(nullable = true, length = 8)
-	@Size(min = 0, max = 8)
+	@Size(min=0, max=8)
 	private String cep;
 
 	public LocalAcidente() {

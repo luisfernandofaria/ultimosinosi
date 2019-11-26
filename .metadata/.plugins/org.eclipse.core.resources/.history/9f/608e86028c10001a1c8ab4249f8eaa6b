@@ -3,7 +3,6 @@ package com.lf.sino.model;
 import java.time.LocalDateTime;
 
 import javax.persistence.CascadeType;
-import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.ManyToOne;
 import javax.persistence.Table;
@@ -21,26 +20,20 @@ public class Denuncia extends AbstractEntity<Integer> {
 	@ManyToOne(cascade = CascadeType.ALL)
 	private LocalAcidente localAcidente;
 
-	@Column(nullable = false, length = 500)
-	@NotBlank(message = "Por favor, informe ao menos uma breve descrição do incidente!")
-	@Size(min = 10, max = 500, message = "Mínimo de 10 caracteres!")
+	@NotBlank(message = "Por favor, informe ao menos uma breve descrição do incidente! (mínimo de 10 caracteres, você digitou: "+ "$")
+	@Size(min = 10, max = 500)
 	private String descricao;
 
-	@Column(nullable = false)
 	@JsonFormat(pattern = "dd/MM/yyyy HH:mm")
 	private LocalDateTime dataDenuncia;
 
-	@Column(nullable = true, length = 200)
 	private String caminhoFoto;
 
-	@Column(nullable = true, length = 60)
 	private String autorDano;
-
-	@Column(nullable = true, length = 60)
+	
 	@Email
 	private String emailUsuario;
-
-	@Column(nullable = false, length = 60)
+	
 	private String categoria;
 
 	public Denuncia() {
