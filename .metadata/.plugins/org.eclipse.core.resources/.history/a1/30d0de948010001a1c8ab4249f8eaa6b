@@ -30,13 +30,13 @@ public class DenunciaRestController {
 
 	@Autowired
 	private MunicipioRepository municipioRepository;
-
+	
 	@Autowired
 	private FileStorageService fileStorageService;
 
 	@Autowired
 	DenunciaRepository denunciaRepository;
-
+	
 	@GetMapping("/listarMunicipios")
 	public List<Municipio> listarMunicipios() {
 		return municipioRepository.findAll();
@@ -47,13 +47,35 @@ public class DenunciaRestController {
 		return denunciaRepository.findAll();
 	}
 
-	@PostMapping(value = "/enviarDenuncia", consumes = { "multipart/form-data" })
+	@PostMapping("/denuncia")
+	public Denuncia criarDenuncia(@RequestBody Denuncia denuncia) {
+		return denunciaRepository.save(denuncia);
+	}
+
+	@RequestMapping(value = "/enviarDenuncia", method = RequestMethod.POST, consumes = { "multipart/form-data" })
 	public void upload(@RequestPart("denuncia") Denuncia denuncia, @RequestPart("file") MultipartFile file) {
-
+		
+		Municipio = municipioRepository.findById(id);
+		
+		
 		String fileName = fileStorageService.storeFile(file);
-
+	
 		denuncia.setCaminhoFoto(fileName);
 		denunciaRepository.save(denuncia);
 	}
+	
+	//FUNCIONANDO
+	
+//	@RequestMapping(value = "/enviarDenuncia", method = RequestMethod.POST, consumes = { "multipart/form-data" })
+//	public void upload(@RequestPart("denuncia") Denuncia denuncia, @RequestPart("file") MultipartFile file) {
+//		
+//		Municipio = municipioRepository.findById(id);
+//		
+//		
+//		String fileName = fileStorageService.storeFile(file);
+//	
+//		denuncia.setCaminhoFoto(fileName);
+//		denunciaRepository.save(denuncia);
+//	}
 
 }

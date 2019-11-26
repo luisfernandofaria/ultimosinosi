@@ -47,11 +47,4 @@ public class Municipio extends AbstractEntity<Integer> {
 		this.codigo = codigo;
 	}
 
-	@Override
-	public String toString() {
-		return "Municipio [codigo=" + codigo + ", nome=" + nome + ", uf=" + uf + "]";
-	}
-	
-	
-
 }

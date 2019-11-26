@@ -17,9 +17,7 @@ import org.springframework.web.multipart.MultipartFile;
 import org.springframework.web.servlet.support.ServletUriComponentsBuilder;
 
 import com.lf.sino.model.Denuncia;
-import com.lf.sino.model.Municipio;
 import com.lf.sino.repository.DenunciaRepository;
-import com.lf.sino.repository.MunicipioRepository;
 import com.lf.sino.service.FileStorageService;
 import com.lf.sino.upload.FileSaver;
 import com.lf.sino.upload.UploadFileResponse;
@@ -29,29 +27,26 @@ import com.lf.sino.upload.UploadFileResponse;
 public class DenunciaRestController {
 
 	@Autowired
-	private MunicipioRepository municipioRepository;
-
-	@Autowired
 	private FileStorageService fileStorageService;
 
 	@Autowired
 	DenunciaRepository denunciaRepository;
 
-	@GetMapping("/listarMunicipios")
-	public List<Municipio> listarMunicipios() {
-		return municipioRepository.findAll();
-	}
-
-	@GetMapping("/listarDenuncias")
-	public List<Denuncia> listarDenuncias() {
+	@GetMapping("/listar")
+	public List<Denuncia> listar() {
 		return denunciaRepository.findAll();
 	}
 
-	@PostMapping(value = "/enviarDenuncia", consumes = { "multipart/form-data" })
+	@PostMapping("/denuncia")
+	public Denuncia criarDenuncia(@RequestBody Denuncia denuncia) {
+		return denunciaRepository.save(denuncia);
+	}
+
+	@RequestMapping(value = "/singleSave", method = RequestMethod.POST, consumes = { "multipart/form-data" })
 	public void upload(@RequestPart("denuncia") Denuncia denuncia, @RequestPart("file") MultipartFile file) {
-
+		
 		String fileName = fileStorageService.storeFile(file);
-
+	
 		denuncia.setCaminhoFoto(fileName);
 		denunciaRepository.save(denuncia);
 	}

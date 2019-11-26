@@ -47,7 +47,7 @@ public class DenunciaRestController {
 		return denunciaRepository.findAll();
 	}
 
-	@PostMapping(value = "/enviarDenuncia", consumes = { "multipart/form-data" })
+	@RequestMapping(value = "/enviarDenuncia", method = RequestMethod.POST, consumes = { "multipart/form-data" })
 	public void upload(@RequestPart("denuncia") Denuncia denuncia, @RequestPart("file") MultipartFile file) {
 
 		String fileName = fileStorageService.storeFile(file);

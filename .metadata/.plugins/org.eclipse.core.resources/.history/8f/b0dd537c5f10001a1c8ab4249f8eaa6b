@@ -1,8 +1,9 @@
 package com.lf.sino.model;
 
-import javax.persistence.CascadeType;
+import java.util.List;
+
 import javax.persistence.Entity;
-import javax.persistence.ManyToOne;
+import javax.persistence.OneToOne;
 import javax.persistence.Table;
 
 @SuppressWarnings("serial")
@@ -14,7 +15,7 @@ public class LocalAcidente extends AbstractEntity<Integer> {
 	private String longitude;
 	private String endereco;
 
-	@ManyToOne(cascade = CascadeType.DETACH)
+	@OneToOne
 	private Municipio municipio;
 
 	private String cep;
