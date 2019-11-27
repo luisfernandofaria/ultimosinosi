@@ -14,7 +14,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 import com.lf.sino.controller.dto.TokenDTO;
 import com.lf.sino.controller.form.LoginForm;
-import com.lf.sino.service.TokenService;
+import com.lf.sino.security.TokenService;
 
 @RestController
 @RequestMapping("/autenticacao")

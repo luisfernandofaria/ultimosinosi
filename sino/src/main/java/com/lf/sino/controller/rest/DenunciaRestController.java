@@ -3,26 +3,18 @@ package com.lf.sino.controller.rest;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.http.MediaType;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RequestPart;
-import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.multipart.MultipartFile;
-import org.springframework.web.servlet.support.ServletUriComponentsBuilder;
 
 import com.lf.sino.model.Denuncia;
 import com.lf.sino.model.Municipio;
 import com.lf.sino.repository.DenunciaRepository;
 import com.lf.sino.repository.MunicipioRepository;
 import com.lf.sino.service.FileStorageService;
-import com.lf.sino.upload.FileSaver;
-import com.lf.sino.upload.UploadFileResponse;
 
 @RestController
 @RequestMapping("rest/denuncias")

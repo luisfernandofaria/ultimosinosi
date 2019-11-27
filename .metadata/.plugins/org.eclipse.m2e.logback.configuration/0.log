@@ -6386,3 +6386,543 @@
 2019-11-27 02:48:28,623 [Worker-508: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
 2019-11-27 02:48:28,626 [Worker-508: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
 2019-11-27 02:48:28,637 [Worker-508: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 23 resources
+2019-11-27 02:48:28,643 [Worker-508: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-11-27 02:48:28,647 [Worker-508: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\sinowork\sino\src\test\resources
+2019-11-27 02:59:33,787 [Worker-506: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-11-27 02:59:33,789 [Worker-506: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2019-11-27 02:59:33,799 [Worker-506: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 23 resources
+2019-11-27 02:59:33,805 [Worker-506: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-11-27 02:59:33,805 [Worker-506: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\sinowork\sino\src\test\resources
+2019-11-27 02:59:48,913 [Worker-511: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-11-27 02:59:48,915 [Worker-511: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2019-11-27 02:59:48,918 [Worker-511: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 23 resources
+2019-11-27 02:59:48,921 [Worker-511: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-11-27 02:59:48,925 [Worker-511: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\sinowork\sino\src\test\resources
+2019-11-27 03:00:32,044 [Worker-511: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-11-27 03:00:32,052 [Worker-511: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2019-11-27 03:00:32,061 [Worker-511: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 23 resources
+2019-11-27 03:00:32,066 [Worker-511: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-11-27 03:00:32,066 [Worker-511: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\sinowork\sino\src\test\resources
+2019-11-27 03:04:50,023 [Worker-514: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-11-27 03:04:50,027 [Worker-514: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2019-11-27 03:04:50,036 [Worker-514: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 23 resources
+2019-11-27 03:04:50,044 [Worker-514: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-11-27 03:04:50,047 [Worker-514: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\sinowork\sino\src\test\resources
+2019-11-27 03:05:26,220 [Worker-514: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-11-27 03:05:26,229 [Worker-514: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2019-11-27 03:05:26,241 [Worker-514: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 23 resources
+2019-11-27 03:05:26,251 [Worker-514: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-11-27 03:05:26,251 [Worker-514: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\sinowork\sino\src\test\resources
+2019-11-27 03:09:04,533 [Worker-514: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-11-27 03:09:04,535 [Worker-514: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2019-11-27 03:09:04,539 [Worker-514: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 23 resources
+2019-11-27 03:09:04,541 [Worker-514: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-11-27 03:09:04,541 [Worker-514: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\sinowork\sino\src\test\resources
+2019-11-27 03:12:37,074 [Worker-517: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-11-27 03:12:37,076 [Worker-517: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2019-11-27 03:12:37,080 [Worker-517: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 23 resources
+2019-11-27 03:12:37,089 [Worker-517: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-11-27 03:12:37,089 [Worker-517: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\sinowork\sino\src\test\resources
+2019-11-27 03:13:29,540 [Worker-515: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-11-27 03:13:29,542 [Worker-515: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2019-11-27 03:13:29,549 [Worker-515: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 23 resources
+2019-11-27 03:13:29,554 [Worker-515: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-11-27 03:13:29,558 [Worker-515: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\sinowork\sino\src\test\resources
+2019-11-27 03:15:01,125 [Worker-518: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-11-27 03:15:01,131 [Worker-518: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2019-11-27 03:15:01,139 [Worker-518: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 23 resources
+2019-11-27 03:15:01,145 [Worker-518: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-11-27 03:15:01,145 [Worker-518: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\sinowork\sino\src\test\resources
+2019-11-27 03:16:01,348 [Worker-517: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-11-27 03:16:01,351 [Worker-517: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2019-11-27 03:16:01,357 [Worker-517: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 23 resources
+2019-11-27 03:16:01,361 [Worker-517: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-11-27 03:16:01,366 [Worker-517: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\sinowork\sino\src\test\resources
+2019-11-27 03:28:32,776 [Worker-503: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-11-27 03:28:32,785 [Worker-503: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2019-11-27 03:28:32,796 [Worker-503: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 23 resources
+2019-11-27 03:28:32,805 [Worker-503: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-11-27 03:28:32,805 [Worker-503: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\sinowork\sino\src\test\resources
+2019-11-27 03:28:35,253 [Worker-523: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-11-27 03:28:35,256 [Worker-523: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2019-11-27 03:28:35,265 [Worker-523: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 23 resources
+2019-11-27 03:28:35,274 [Worker-523: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-11-27 03:28:35,281 [Worker-523: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\sinowork\sino\src\test\resources
+2019-11-27 03:29:27,353 [Worker-524: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-11-27 03:29:27,359 [Worker-524: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2019-11-27 03:29:27,366 [Worker-524: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 23 resources
+2019-11-27 03:29:27,372 [Worker-524: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-11-27 03:29:27,372 [Worker-524: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\sinowork\sino\src\test\resources
+2019-11-27 03:29:52,416 [Worker-520: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-11-27 03:29:52,419 [Worker-520: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2019-11-27 03:29:52,424 [Worker-520: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 23 resources
+2019-11-27 03:29:52,427 [Worker-520: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-11-27 03:29:52,427 [Worker-520: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\sinowork\sino\src\test\resources
+2019-11-27 03:31:30,007 [Worker-525: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-11-27 03:31:30,010 [Worker-525: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2019-11-27 03:31:30,015 [Worker-525: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 23 resources
+2019-11-27 03:31:30,021 [Worker-525: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-11-27 03:31:30,021 [Worker-525: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\sinowork\sino\src\test\resources
+2019-11-27 03:31:55,654 [Worker-522: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-11-27 03:31:55,656 [Worker-522: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2019-11-27 03:31:55,664 [Worker-522: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 23 resources
+2019-11-27 03:31:55,670 [Worker-522: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-11-27 03:31:55,674 [Worker-522: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\sinowork\sino\src\test\resources
+2019-11-27 03:34:41,523 [Worker-503: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-11-27 03:34:41,529 [Worker-503: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2019-11-27 03:34:41,537 [Worker-503: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 23 resources
+2019-11-27 03:34:41,546 [Worker-503: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-11-27 03:34:41,546 [Worker-503: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\sinowork\sino\src\test\resources
+2019-11-27 11:20:12,380 [Worker-618: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-11-27 11:20:12,381 [Worker-618: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2019-11-27 11:20:12,383 [Worker-618: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-11-27 11:20:12,385 [Worker-618: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-11-27 11:20:12,389 [Worker-618: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\sinowork\sino\src\test\resources
+2019-11-27 11:21:39,767 [Worker-619: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-11-27 11:21:39,775 [Worker-619: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2019-11-27 11:21:39,783 [Worker-619: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 23 resources
+2019-11-27 11:21:39,789 [Worker-619: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-11-27 11:21:39,790 [Worker-619: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\sinowork\sino\src\test\resources
+2019-11-27 11:22:14,677 [Worker-616: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-11-27 11:22:14,679 [Worker-616: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2019-11-27 11:22:14,689 [Worker-616: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 23 resources
+2019-11-27 11:22:14,697 [Worker-616: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-11-27 11:22:14,703 [Worker-616: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\sinowork\sino\src\test\resources
+2019-11-27 11:24:11,314 [Worker-619: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-11-27 11:24:11,323 [Worker-619: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2019-11-27 11:24:11,332 [Worker-619: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 23 resources
+2019-11-27 11:24:11,338 [Worker-619: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-11-27 11:24:11,338 [Worker-619: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\sinowork\sino\src\test\resources
+2019-11-27 11:25:07,796 [Worker-622: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-11-27 11:25:07,799 [Worker-622: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2019-11-27 11:25:07,805 [Worker-622: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 23 resources
+2019-11-27 11:25:07,809 [Worker-622: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-11-27 11:25:07,809 [Worker-622: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\sinowork\sino\src\test\resources
+2019-11-27 11:25:13,662 [Worker-623: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-11-27 11:25:13,664 [Worker-623: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2019-11-27 11:25:13,667 [Worker-623: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 23 resources
+2019-11-27 11:25:13,672 [Worker-623: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-11-27 11:25:13,672 [Worker-623: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\sinowork\sino\src\test\resources
+2019-11-27 11:30:09,820 [Worker-627: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-11-27 11:30:09,821 [Worker-627: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2019-11-27 11:30:09,830 [Worker-627: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 23 resources
+2019-11-27 11:30:09,840 [Worker-627: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-11-27 11:30:09,846 [Worker-627: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\sinowork\sino\src\test\resources
+2019-11-27 11:37:07,800 [Worker-630: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-11-27 11:37:07,810 [Worker-630: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2019-11-27 11:37:07,819 [Worker-630: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 23 resources
+2019-11-27 11:37:07,825 [Worker-630: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-11-27 11:37:07,825 [Worker-630: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\sinowork\sino\src\test\resources
+2019-11-27 11:37:41,488 [Worker-630: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-11-27 11:37:41,490 [Worker-630: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2019-11-27 11:37:41,494 [Worker-630: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 23 resources
+2019-11-27 11:37:41,496 [Worker-630: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-11-27 11:37:41,502 [Worker-630: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\sinowork\sino\src\test\resources
+2019-11-27 11:38:31,442 [Worker-632: Building workspace] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.lf:sino:0.0.1-SNAPSHOT @ C:\sinowork\sino\pom.xml.
+2019-11-27 11:38:31,811 [Worker-632: Building workspace] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://repo2.maven.org/maven2/org/springframework/boot/spring-boot-actuator/2.2.1.RELEASE/spring-boot-actuator-2.2.1.RELEASE.pom
+2019-11-27 11:38:32,240 [Worker-632: Building workspace] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo2.maven.org/maven2/org/springframework/boot/spring-boot-actuator/2.2.1.RELEASE/spring-boot-actuator-2.2.1.RELEASE.pom
+2019-11-27 11:38:33,727 [Worker-632: Building workspace] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://repo2.maven.org/maven2/org/springframework/boot/spring-boot-actuator/2.2.1.RELEASE/spring-boot-actuator-2.2.1.RELEASE.jar
+2019-11-27 11:38:34,770 [Worker-632: Building workspace] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo2.maven.org/maven2/org/springframework/boot/spring-boot-actuator/2.2.1.RELEASE/spring-boot-actuator-2.2.1.RELEASE.jar
+2019-11-27 11:38:36,505 [Worker-632: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-11-27 11:38:36,516 [Worker-632: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-11-27 11:38:36,520 [Worker-632: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-11-27 11:38:36,523 [Worker-632: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-11-27 11:38:36,527 [Worker-632: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\sinowork\sino\src\test\resources
+2019-11-27 11:38:37,332 [Worker-629: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://repo2.maven.org/maven2/org/springframework/boot/spring-boot-actuator/2.2.1.RELEASE/spring-boot-actuator-2.2.1.RELEASE-sources.jar
+2019-11-27 11:38:37,989 [Worker-631: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-11-27 11:38:37,995 [Worker-631: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2019-11-27 11:38:38,018 [Worker-631: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 15 resources
+2019-11-27 11:38:38,383 [Worker-631: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-11-27 11:38:38,387 [Worker-631: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\sinowork\sino\src\test\resources
+2019-11-27 11:38:38,683 [Worker-629: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo2.maven.org/maven2/org/springframework/boot/spring-boot-actuator/2.2.1.RELEASE/spring-boot-actuator-2.2.1.RELEASE-sources.jar
+2019-11-27 11:38:38,800 [Worker-629: Download sources and javadoc] INFO  o.e.m.j.internal.DownloadSourcesJob - Downloaded sources for org.springframework.boot:spring-boot-actuator:2.2.1.RELEASE
+2019-11-27 11:38:39,459 [Worker-633: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-11-27 11:38:39,465 [Worker-633: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-11-27 11:38:39,465 [Worker-633: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-11-27 11:38:39,470 [Worker-633: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-11-27 11:38:39,470 [Worker-633: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\sinowork\sino\src\test\resources
+2019-11-27 11:38:39,953 [Worker-634: Download sources and javadoc] INFO  o.e.m.j.internal.DownloadSourcesJob - Downloaded sources for org.springframework.boot:spring-boot-actuator:2.2.1.RELEASE
+2019-11-27 11:38:40,499 [Worker-625: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-11-27 11:38:40,499 [Worker-625: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-11-27 11:38:40,499 [Worker-625: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-11-27 11:38:40,500 [Worker-625: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-11-27 11:38:40,501 [Worker-625: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\sinowork\sino\src\test\resources
+2019-11-27 11:39:17,911 [Worker-633: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-11-27 11:39:17,911 [Worker-633: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-11-27 11:39:17,915 [Worker-633: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-11-27 11:39:17,917 [Worker-633: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-11-27 11:39:17,920 [Worker-633: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\sinowork\sino\src\test\resources
+2019-11-27 11:39:53,490 [Worker-631: Building workspace] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.lf:sino:0.0.1-SNAPSHOT @ C:\sinowork\sino\pom.xml.
+2019-11-27 11:39:53,835 [Worker-631: Building workspace] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://repo2.maven.org/maven2/org/springframework/boot/spring-boot-starter-actuator/2.2.1.RELEASE/spring-boot-starter-actuator-2.2.1.RELEASE.pom
+2019-11-27 11:39:54,013 [Worker-631: Building workspace] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo2.maven.org/maven2/org/springframework/boot/spring-boot-starter-actuator/2.2.1.RELEASE/spring-boot-starter-actuator-2.2.1.RELEASE.pom
+2019-11-27 11:39:54,315 [Worker-631: Building workspace] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://repo2.maven.org/maven2/org/springframework/boot/spring-boot-actuator-autoconfigure/2.2.1.RELEASE/spring-boot-actuator-autoconfigure-2.2.1.RELEASE.pom
+2019-11-27 11:39:54,662 [Worker-631: Building workspace] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo2.maven.org/maven2/org/springframework/boot/spring-boot-actuator-autoconfigure/2.2.1.RELEASE/spring-boot-actuator-autoconfigure-2.2.1.RELEASE.pom
+2019-11-27 11:39:54,855 [Worker-631: Building workspace] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://repo2.maven.org/maven2/io/micrometer/micrometer-core/1.3.1/micrometer-core-1.3.1.pom
+2019-11-27 11:39:55,018 [Worker-631: Building workspace] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo2.maven.org/maven2/io/micrometer/micrometer-core/1.3.1/micrometer-core-1.3.1.pom
+2019-11-27 11:39:55,181 [Worker-631: Building workspace] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://repo2.maven.org/maven2/org/hdrhistogram/HdrHistogram/2.1.11/HdrHistogram-2.1.11.pom
+2019-11-27 11:39:55,351 [Worker-631: Building workspace] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo2.maven.org/maven2/org/hdrhistogram/HdrHistogram/2.1.11/HdrHistogram-2.1.11.pom
+2019-11-27 11:39:55,718 [Worker-631: Building workspace] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://repo2.maven.org/maven2/org/springframework/boot/spring-boot-starter-actuator/2.2.1.RELEASE/spring-boot-starter-actuator-2.2.1.RELEASE.jar
+2019-11-27 11:39:55,937 [Worker-631: Building workspace] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo2.maven.org/maven2/org/springframework/boot/spring-boot-starter-actuator/2.2.1.RELEASE/spring-boot-starter-actuator-2.2.1.RELEASE.jar
+2019-11-27 11:39:56,088 [Worker-631: Building workspace] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://repo2.maven.org/maven2/org/springframework/boot/spring-boot-actuator-autoconfigure/2.2.1.RELEASE/spring-boot-actuator-autoconfigure-2.2.1.RELEASE.jar
+2019-11-27 11:39:57,092 [Worker-631: Building workspace] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo2.maven.org/maven2/org/springframework/boot/spring-boot-actuator-autoconfigure/2.2.1.RELEASE/spring-boot-actuator-autoconfigure-2.2.1.RELEASE.jar
+2019-11-27 11:39:57,244 [Worker-631: Building workspace] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://repo2.maven.org/maven2/io/micrometer/micrometer-core/1.3.1/micrometer-core-1.3.1.jar
+2019-11-27 11:39:58,017 [Worker-631: Building workspace] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo2.maven.org/maven2/io/micrometer/micrometer-core/1.3.1/micrometer-core-1.3.1.jar
+2019-11-27 11:39:58,172 [Worker-631: Building workspace] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://repo2.maven.org/maven2/org/hdrhistogram/HdrHistogram/2.1.11/HdrHistogram-2.1.11.jar
+2019-11-27 11:39:58,457 [Worker-631: Building workspace] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo2.maven.org/maven2/org/hdrhistogram/HdrHistogram/2.1.11/HdrHistogram-2.1.11.jar
+2019-11-27 11:39:59,189 [Worker-631: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-11-27 11:39:59,198 [Worker-631: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-11-27 11:39:59,202 [Worker-631: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-11-27 11:39:59,204 [Worker-631: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-11-27 11:39:59,208 [Worker-631: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\sinowork\sino\src\test\resources
+2019-11-27 11:40:00,476 [Worker-634: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-11-27 11:40:00,477 [Worker-634: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2019-11-27 11:40:00,496 [Worker-634: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 14 resources
+2019-11-27 11:40:00,674 [Worker-634: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-11-27 11:40:00,678 [Worker-634: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\sinowork\sino\src\test\resources
+2019-11-27 11:40:00,912 [Worker-631: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://repo2.maven.org/maven2/org/springframework/boot/spring-boot-starter-actuator/2.2.1.RELEASE/spring-boot-starter-actuator-2.2.1.RELEASE-sources.jar
+2019-11-27 11:40:01,132 [Worker-631: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo2.maven.org/maven2/org/springframework/boot/spring-boot-starter-actuator/2.2.1.RELEASE/spring-boot-starter-actuator-2.2.1.RELEASE-sources.jar
+2019-11-27 11:40:01,199 [Worker-631: Download sources and javadoc] INFO  o.e.m.j.internal.DownloadSourcesJob - Downloaded sources for org.springframework.boot:spring-boot-starter-actuator:2.2.1.RELEASE
+2019-11-27 11:40:01,359 [Worker-631: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://repo2.maven.org/maven2/org/springframework/boot/spring-boot-actuator-autoconfigure/2.2.1.RELEASE/spring-boot-actuator-autoconfigure-2.2.1.RELEASE-sources.jar
+2019-11-27 11:40:02,375 [Worker-631: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo2.maven.org/maven2/org/springframework/boot/spring-boot-actuator-autoconfigure/2.2.1.RELEASE/spring-boot-actuator-autoconfigure-2.2.1.RELEASE-sources.jar
+2019-11-27 11:40:02,447 [Worker-631: Download sources and javadoc] INFO  o.e.m.j.internal.DownloadSourcesJob - Downloaded sources for org.springframework.boot:spring-boot-actuator-autoconfigure:2.2.1.RELEASE
+2019-11-27 11:40:02,598 [Worker-631: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://repo2.maven.org/maven2/io/micrometer/micrometer-core/1.3.1/micrometer-core-1.3.1-sources.jar
+2019-11-27 11:40:03,021 [Worker-631: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo2.maven.org/maven2/io/micrometer/micrometer-core/1.3.1/micrometer-core-1.3.1-sources.jar
+2019-11-27 11:40:03,113 [Worker-631: Download sources and javadoc] INFO  o.e.m.j.internal.DownloadSourcesJob - Downloaded sources for io.micrometer:micrometer-core:1.3.1
+2019-11-27 11:40:03,277 [Worker-631: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://repo2.maven.org/maven2/org/hdrhistogram/HdrHistogram/2.1.11/HdrHistogram-2.1.11-sources.jar
+2019-11-27 11:40:03,533 [Worker-631: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo2.maven.org/maven2/org/hdrhistogram/HdrHistogram/2.1.11/HdrHistogram-2.1.11-sources.jar
+2019-11-27 11:40:03,606 [Worker-631: Download sources and javadoc] INFO  o.e.m.j.internal.DownloadSourcesJob - Downloaded sources for org.hdrhistogram:HdrHistogram:2.1.11
+2019-11-27 11:40:03,890 [Worker-629: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-11-27 11:40:03,890 [Worker-629: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-11-27 11:40:03,896 [Worker-629: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-11-27 11:40:03,898 [Worker-629: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-11-27 11:40:03,903 [Worker-629: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\sinowork\sino\src\test\resources
+2019-11-27 11:43:04,004 [Worker-631: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-11-27 11:43:04,013 [Worker-631: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2019-11-27 11:43:04,023 [Worker-631: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 14 resources
+2019-11-27 11:43:04,031 [Worker-631: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-11-27 11:43:04,031 [Worker-631: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\sinowork\sino\src\test\resources
+2019-11-27 11:46:14,909 [Worker-638: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-11-27 11:46:14,909 [Worker-638: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2019-11-27 11:46:14,918 [Worker-638: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-11-27 11:46:14,919 [Worker-638: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-11-27 11:46:14,926 [Worker-638: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\sinowork\sino\src\test\resources
+2019-11-27 11:47:11,807 [Worker-637: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-11-27 11:47:11,814 [Worker-637: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2019-11-27 11:47:11,828 [Worker-637: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-11-27 11:47:11,835 [Worker-637: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-11-27 11:47:11,835 [Worker-637: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\sinowork\sino\src\test\resources
+2019-11-27 11:47:51,788 [Worker-641: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-11-27 11:47:51,788 [Worker-641: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2019-11-27 11:47:51,799 [Worker-641: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-11-27 11:47:51,807 [Worker-641: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-11-27 11:47:51,814 [Worker-641: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\sinowork\sino\src\test\resources
+2019-11-27 11:56:21,173 [Worker-645: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-11-27 11:56:21,179 [Worker-645: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2019-11-27 11:56:21,188 [Worker-645: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 14 resources
+2019-11-27 11:56:21,195 [Worker-645: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-11-27 11:56:21,195 [Worker-645: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\sinowork\sino\src\test\resources
+2019-11-27 11:57:26,327 [Worker-648: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-11-27 11:57:26,330 [Worker-648: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2019-11-27 11:57:26,334 [Worker-648: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 14 resources
+2019-11-27 11:57:26,336 [Worker-648: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-11-27 11:57:26,336 [Worker-648: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\sinowork\sino\src\test\resources
+2019-11-27 11:57:42,021 [Worker-647: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-11-27 11:57:42,024 [Worker-647: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2019-11-27 11:57:42,028 [Worker-647: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 14 resources
+2019-11-27 11:57:42,035 [Worker-647: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-11-27 11:57:42,035 [Worker-647: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\sinowork\sino\src\test\resources
+2019-11-27 11:59:26,172 [Worker-640: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-11-27 11:59:26,174 [Worker-640: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2019-11-27 11:59:26,186 [Worker-640: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 14 resources
+2019-11-27 11:59:26,194 [Worker-640: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-11-27 11:59:26,200 [Worker-640: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\sinowork\sino\src\test\resources
+2019-11-27 12:03:56,068 [Worker-647: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-11-27 12:03:56,074 [Worker-647: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2019-11-27 12:03:56,080 [Worker-647: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 15 resources
+2019-11-27 12:03:56,089 [Worker-647: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-11-27 12:03:56,089 [Worker-647: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\sinowork\sino\src\test\resources
+2019-11-27 12:05:23,382 [Worker-650: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-11-27 12:05:23,385 [Worker-650: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2019-11-27 12:05:23,389 [Worker-650: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 15 resources
+2019-11-27 12:05:23,391 [Worker-650: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-11-27 12:05:23,398 [Worker-650: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\sinowork\sino\src\test\resources
+2019-11-27 12:07:29,125 [Worker-654: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-11-27 12:07:29,130 [Worker-654: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2019-11-27 12:07:29,136 [Worker-654: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 15 resources
+2019-11-27 12:07:29,141 [Worker-654: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-11-27 12:07:29,141 [Worker-654: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\sinowork\sino\src\test\resources
+2019-11-27 12:08:41,091 [Worker-656: Updating Maven Project] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update started
+2019-11-27 12:08:41,485 [Worker-656: Updating Maven Project] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.lf:sino:0.0.1-SNAPSHOT @ C:\sinowork\sino\pom.xml.
+2019-11-27 12:08:42,085 [Worker-656: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /sino/src/main/java
+2019-11-27 12:08:42,092 [Worker-656: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /sino/src/main/resources
+2019-11-27 12:08:42,099 [Worker-656: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /sino/src/main/resources
+2019-11-27 12:08:42,099 [Worker-656: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /sino/src/test/java
+2019-11-27 12:08:42,314 [Worker-656: Updating Maven Project] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update completed: 1 sec
+2019-11-27 12:08:42,921 [Worker-654: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-11-27 12:08:42,922 [Worker-654: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2019-11-27 12:08:42,938 [Worker-654: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 15 resources
+2019-11-27 12:08:43,134 [Worker-654: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-11-27 12:08:43,141 [Worker-654: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\sinowork\sino\src\test\resources
+2019-11-27 12:08:54,832 [Worker-647: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-11-27 12:08:54,832 [Worker-647: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2019-11-27 12:08:54,841 [Worker-647: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 15 resources
+2019-11-27 12:08:55,033 [Worker-647: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-11-27 12:08:55,041 [Worker-647: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\sinowork\sino\src\test\resources
+2019-11-27 12:19:48,637 [Worker-657: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-11-27 12:19:48,646 [Worker-657: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2019-11-27 12:19:48,653 [Worker-657: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 15 resources
+2019-11-27 12:19:48,659 [Worker-657: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-11-27 12:19:48,659 [Worker-657: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\sinowork\sino\src\test\resources
+2019-11-27 12:22:01,723 [Worker-659: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-11-27 12:22:01,724 [Worker-659: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2019-11-27 12:22:01,727 [Worker-659: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 15 resources
+2019-11-27 12:22:01,729 [Worker-659: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-11-27 12:22:01,733 [Worker-659: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\sinowork\sino\src\test\resources
+2019-11-27 12:22:04,276 [Worker-658: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-11-27 12:22:04,283 [Worker-658: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2019-11-27 12:22:04,290 [Worker-658: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 15 resources
+2019-11-27 12:22:04,296 [Worker-658: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-11-27 12:22:04,296 [Worker-658: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\sinowork\sino\src\test\resources
+2019-11-27 12:24:46,960 [Worker-661: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-11-27 12:24:46,963 [Worker-661: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2019-11-27 12:24:46,970 [Worker-661: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 15 resources
+2019-11-27 12:24:46,980 [Worker-661: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-11-27 12:24:46,988 [Worker-661: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\sinowork\sino\src\test\resources
+2019-11-27 12:27:10,188 [Worker-661: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-11-27 12:27:10,194 [Worker-661: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2019-11-27 12:27:10,201 [Worker-661: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 16 resources
+2019-11-27 12:27:10,210 [Worker-661: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-11-27 12:27:10,210 [Worker-661: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\sinowork\sino\src\test\resources
+2019-11-27 12:28:31,296 [Worker-659: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-11-27 12:28:31,297 [Worker-659: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2019-11-27 12:28:31,307 [Worker-659: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-11-27 12:28:31,310 [Worker-659: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-11-27 12:28:31,310 [Worker-659: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\sinowork\sino\src\test\resources
+2019-11-27 12:29:43,167 [Worker-666: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-11-27 12:29:43,168 [Worker-666: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2019-11-27 12:29:43,171 [Worker-666: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 16 resources
+2019-11-27 12:29:43,186 [Worker-666: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-11-27 12:29:43,186 [Worker-666: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\sinowork\sino\src\test\resources
+2019-11-27 12:30:13,787 [Worker-661: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-11-27 12:30:13,788 [Worker-661: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2019-11-27 12:30:13,795 [Worker-661: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 16 resources
+2019-11-27 12:30:13,800 [Worker-661: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-11-27 12:30:13,803 [Worker-661: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\sinowork\sino\src\test\resources
+2019-11-27 12:31:41,719 [Worker-668: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-11-27 12:31:41,727 [Worker-668: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2019-11-27 12:31:41,736 [Worker-668: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 16 resources
+2019-11-27 12:31:41,744 [Worker-668: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-11-27 12:31:41,744 [Worker-668: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\sinowork\sino\src\test\resources
+2019-11-27 12:32:29,149 [Worker-666: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-11-27 12:32:29,151 [Worker-666: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2019-11-27 12:32:29,153 [Worker-666: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 16 resources
+2019-11-27 12:32:29,155 [Worker-666: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-11-27 12:32:29,159 [Worker-666: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\sinowork\sino\src\test\resources
+2019-11-27 12:34:17,890 [Worker-647: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-11-27 12:34:17,896 [Worker-647: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2019-11-27 12:34:17,902 [Worker-647: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 16 resources
+2019-11-27 12:34:17,907 [Worker-647: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-11-27 12:34:17,907 [Worker-647: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\sinowork\sino\src\test\resources
+2019-11-27 12:38:24,885 [Worker-675: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-11-27 12:38:24,887 [Worker-675: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2019-11-27 12:38:24,895 [Worker-675: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 16 resources
+2019-11-27 12:38:24,901 [Worker-675: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-11-27 12:38:24,905 [Worker-675: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\sinowork\sino\src\test\resources
+2019-11-27 12:41:31,818 [Worker-675: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-11-27 12:41:31,827 [Worker-675: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2019-11-27 12:41:31,837 [Worker-675: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 16 resources
+2019-11-27 12:41:31,843 [Worker-675: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-11-27 12:41:31,843 [Worker-675: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\sinowork\sino\src\test\resources
+2019-11-27 12:41:55,767 [Worker-674: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-11-27 12:41:55,769 [Worker-674: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2019-11-27 12:41:55,774 [Worker-674: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 16 resources
+2019-11-27 12:41:55,778 [Worker-674: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-11-27 12:41:55,778 [Worker-674: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\sinowork\sino\src\test\resources
+2019-11-27 12:44:58,697 [Worker-677: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-11-27 12:44:58,700 [Worker-677: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2019-11-27 12:44:58,705 [Worker-677: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 16 resources
+2019-11-27 12:44:58,713 [Worker-677: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-11-27 12:44:58,713 [Worker-677: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\sinowork\sino\src\test\resources
+2019-11-27 12:46:07,040 [Worker-680: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-11-27 12:46:07,043 [Worker-680: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2019-11-27 12:46:07,054 [Worker-680: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 16 resources
+2019-11-27 12:46:07,063 [Worker-680: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-11-27 12:46:07,067 [Worker-680: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\sinowork\sino\src\test\resources
+2019-11-27 12:46:38,962 [Worker-679: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-11-27 12:46:38,970 [Worker-679: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2019-11-27 12:46:38,980 [Worker-679: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 16 resources
+2019-11-27 12:46:38,987 [Worker-679: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-11-27 12:46:38,987 [Worker-679: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\sinowork\sino\src\test\resources
+2019-11-27 12:47:56,736 [Worker-681: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-11-27 12:47:56,739 [Worker-681: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2019-11-27 12:47:56,743 [Worker-681: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 16 resources
+2019-11-27 12:47:56,746 [Worker-681: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-11-27 12:47:56,752 [Worker-681: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\sinowork\sino\src\test\resources
+2019-11-27 12:49:12,878 [Worker-683: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-11-27 12:49:12,887 [Worker-683: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2019-11-27 12:49:12,894 [Worker-683: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 16 resources
+2019-11-27 12:49:12,899 [Worker-683: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-11-27 12:49:12,899 [Worker-683: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\sinowork\sino\src\test\resources
+2019-11-27 12:51:29,170 [Worker-683: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-11-27 12:51:29,173 [Worker-683: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2019-11-27 12:51:29,181 [Worker-683: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 16 resources
+2019-11-27 12:51:29,190 [Worker-683: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-11-27 12:51:29,196 [Worker-683: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\sinowork\sino\src\test\resources
+2019-11-27 12:51:35,296 [Worker-683: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-11-27 12:51:35,302 [Worker-683: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2019-11-27 12:51:35,310 [Worker-683: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 16 resources
+2019-11-27 12:51:35,316 [Worker-683: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-11-27 12:51:35,316 [Worker-683: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\sinowork\sino\src\test\resources
+2019-11-27 12:52:26,783 [Worker-681: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-11-27 12:52:26,784 [Worker-681: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2019-11-27 12:52:26,787 [Worker-681: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 16 resources
+2019-11-27 12:52:26,789 [Worker-681: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-11-27 12:52:26,789 [Worker-681: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\sinowork\sino\src\test\resources
+2019-11-27 12:53:12,391 [Worker-680: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-11-27 12:53:12,394 [Worker-680: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2019-11-27 12:53:12,399 [Worker-680: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 16 resources
+2019-11-27 12:53:12,406 [Worker-680: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-11-27 12:53:12,406 [Worker-680: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\sinowork\sino\src\test\resources
+2019-11-27 12:55:36,731 [Worker-680: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-11-27 12:55:36,734 [Worker-680: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2019-11-27 12:55:36,741 [Worker-680: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 16 resources
+2019-11-27 12:55:36,747 [Worker-680: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-11-27 12:55:36,750 [Worker-680: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\sinowork\sino\src\test\resources
+2019-11-27 12:58:47,976 [Worker-681: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-11-27 12:58:47,984 [Worker-681: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2019-11-27 12:58:47,996 [Worker-681: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 16 resources
+2019-11-27 12:58:48,004 [Worker-681: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-11-27 12:58:48,004 [Worker-681: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\sinowork\sino\src\test\resources
+2019-11-27 12:59:36,518 [Worker-684: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-11-27 12:59:36,520 [Worker-684: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2019-11-27 12:59:36,525 [Worker-684: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 16 resources
+2019-11-27 12:59:36,527 [Worker-684: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-11-27 12:59:36,531 [Worker-684: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\sinowork\sino\src\test\resources
+2019-11-27 12:59:56,838 [Worker-684: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-11-27 12:59:56,845 [Worker-684: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2019-11-27 12:59:56,855 [Worker-684: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 16 resources
+2019-11-27 12:59:56,862 [Worker-684: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-11-27 12:59:56,863 [Worker-684: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\sinowork\sino\src\test\resources
+2019-11-27 13:00:52,427 [Worker-690: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-11-27 13:00:52,429 [Worker-690: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2019-11-27 13:00:52,435 [Worker-690: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 16 resources
+2019-11-27 13:00:52,440 [Worker-690: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-11-27 13:00:52,443 [Worker-690: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\sinowork\sino\src\test\resources
+2019-11-27 13:01:31,021 [Worker-689: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-11-27 13:01:31,030 [Worker-689: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2019-11-27 13:01:31,038 [Worker-689: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 16 resources
+2019-11-27 13:01:31,044 [Worker-689: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-11-27 13:01:31,044 [Worker-689: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\sinowork\sino\src\test\resources
+2019-11-27 13:01:36,283 [Worker-689: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-11-27 13:01:36,285 [Worker-689: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2019-11-27 13:01:36,288 [Worker-689: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 16 resources
+2019-11-27 13:01:36,290 [Worker-689: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-11-27 13:01:36,290 [Worker-689: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\sinowork\sino\src\test\resources
+2019-11-27 13:04:06,821 [Worker-693: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-11-27 13:04:06,824 [Worker-693: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2019-11-27 13:04:06,828 [Worker-693: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 16 resources
+2019-11-27 13:04:06,833 [Worker-693: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-11-27 13:04:06,833 [Worker-693: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\sinowork\sino\src\test\resources
+2019-11-27 13:04:22,386 [Worker-692: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-11-27 13:04:22,387 [Worker-692: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2019-11-27 13:04:22,397 [Worker-692: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 16 resources
+2019-11-27 13:04:22,402 [Worker-692: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-11-27 13:04:22,405 [Worker-692: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\sinowork\sino\src\test\resources
+2019-11-27 13:05:44,714 [Worker-689: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-11-27 13:05:44,719 [Worker-689: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2019-11-27 13:05:44,725 [Worker-689: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 16 resources
+2019-11-27 13:05:44,731 [Worker-689: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-11-27 13:05:44,731 [Worker-689: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\sinowork\sino\src\test\resources
+2019-11-27 13:07:25,126 [Worker-694: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-11-27 13:07:25,127 [Worker-694: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2019-11-27 13:07:25,132 [Worker-694: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 16 resources
+2019-11-27 13:07:25,135 [Worker-694: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-11-27 13:07:25,142 [Worker-694: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\sinowork\sino\src\test\resources
+2019-11-27 13:16:14,957 [Worker-699: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-11-27 13:16:14,964 [Worker-699: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2019-11-27 13:16:14,973 [Worker-699: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 16 resources
+2019-11-27 13:16:14,980 [Worker-699: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-11-27 13:16:14,980 [Worker-699: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\sinowork\sino\src\test\resources
+2019-11-27 13:18:04,583 [Worker-700: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-11-27 13:18:04,586 [Worker-700: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2019-11-27 13:18:04,594 [Worker-700: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 16 resources
+2019-11-27 13:18:04,600 [Worker-700: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-11-27 13:18:04,607 [Worker-700: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\sinowork\sino\src\test\resources
+2019-11-27 13:18:56,532 [Worker-668: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-11-27 13:18:56,538 [Worker-668: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2019-11-27 13:18:56,544 [Worker-668: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 16 resources
+2019-11-27 13:18:56,549 [Worker-668: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-11-27 13:18:56,549 [Worker-668: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\sinowork\sino\src\test\resources
+2019-11-27 13:19:06,467 [Worker-700: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-11-27 13:19:06,468 [Worker-700: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2019-11-27 13:19:06,472 [Worker-700: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 16 resources
+2019-11-27 13:19:06,474 [Worker-700: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-11-27 13:19:06,474 [Worker-700: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\sinowork\sino\src\test\resources
+2019-11-27 13:19:50,185 [Worker-702: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-11-27 13:19:50,188 [Worker-702: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2019-11-27 13:19:50,193 [Worker-702: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 16 resources
+2019-11-27 13:19:50,203 [Worker-702: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-11-27 13:19:50,203 [Worker-702: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\sinowork\sino\src\test\resources
+2019-11-27 13:20:48,213 [Worker-704: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-11-27 13:20:48,216 [Worker-704: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2019-11-27 13:20:48,224 [Worker-704: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 16 resources
+2019-11-27 13:20:48,230 [Worker-704: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-11-27 13:20:48,233 [Worker-704: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\sinowork\sino\src\test\resources
+2019-11-27 13:28:05,626 [Worker-668: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-11-27 13:28:05,632 [Worker-668: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2019-11-27 13:28:05,641 [Worker-668: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 16 resources
+2019-11-27 13:28:05,646 [Worker-668: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-11-27 13:28:05,646 [Worker-668: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\sinowork\sino\src\test\resources
+2019-11-27 13:28:28,766 [Worker-709: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-11-27 13:28:28,769 [Worker-709: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2019-11-27 13:28:28,774 [Worker-709: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 16 resources
+2019-11-27 13:28:28,777 [Worker-709: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-11-27 13:28:28,781 [Worker-709: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\sinowork\sino\src\test\resources
+2019-11-27 13:29:27,289 [Worker-708: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-11-27 13:29:27,297 [Worker-708: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2019-11-27 13:29:27,306 [Worker-708: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 16 resources
+2019-11-27 13:29:27,314 [Worker-708: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-11-27 13:29:27,314 [Worker-708: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\sinowork\sino\src\test\resources
+2019-11-27 13:34:27,042 [Worker-714: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-11-27 13:34:27,044 [Worker-714: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2019-11-27 13:34:27,051 [Worker-714: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 16 resources
+2019-11-27 13:34:27,059 [Worker-714: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-11-27 13:34:27,062 [Worker-714: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\sinowork\sino\src\test\resources
+2019-11-27 13:34:48,554 [Worker-714: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-11-27 13:34:48,563 [Worker-714: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2019-11-27 13:34:48,574 [Worker-714: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 16 resources
+2019-11-27 13:34:48,584 [Worker-714: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-11-27 13:34:48,584 [Worker-714: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\sinowork\sino\src\test\resources
+2019-11-27 13:36:58,307 [Worker-711: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-11-27 13:36:58,308 [Worker-711: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2019-11-27 13:36:58,313 [Worker-711: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 16 resources
+2019-11-27 13:36:58,316 [Worker-711: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-11-27 13:36:58,316 [Worker-711: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\sinowork\sino\src\test\resources
+2019-11-27 13:37:27,702 [Worker-717: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-11-27 13:37:27,704 [Worker-717: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2019-11-27 13:37:27,707 [Worker-717: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 16 resources
+2019-11-27 13:37:27,712 [Worker-717: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-11-27 13:37:27,712 [Worker-717: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\sinowork\sino\src\test\resources
+2019-11-27 13:37:33,377 [Worker-717: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-11-27 13:37:33,378 [Worker-717: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2019-11-27 13:37:33,386 [Worker-717: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 16 resources
+2019-11-27 13:37:33,392 [Worker-717: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-11-27 13:37:33,396 [Worker-717: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\sinowork\sino\src\test\resources
+2019-11-27 13:38:18,213 [Worker-711: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-11-27 13:38:18,219 [Worker-711: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2019-11-27 13:38:18,225 [Worker-711: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 16 resources
+2019-11-27 13:38:18,231 [Worker-711: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-11-27 13:38:18,231 [Worker-711: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\sinowork\sino\src\test\resources
+2019-11-27 13:38:36,918 [Worker-715: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-11-27 13:38:36,919 [Worker-715: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2019-11-27 13:38:36,923 [Worker-715: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 16 resources
+2019-11-27 13:38:36,925 [Worker-715: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-11-27 13:38:36,928 [Worker-715: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\sinowork\sino\src\test\resources
+2019-11-27 13:39:15,642 [Worker-715: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-11-27 13:39:15,650 [Worker-715: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2019-11-27 13:39:15,659 [Worker-715: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 16 resources
+2019-11-27 13:39:15,667 [Worker-715: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-11-27 13:39:15,667 [Worker-715: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\sinowork\sino\src\test\resources
+2019-11-27 13:42:18,583 [Worker-720: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-11-27 13:42:18,585 [Worker-720: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2019-11-27 13:42:18,591 [Worker-720: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 16 resources
