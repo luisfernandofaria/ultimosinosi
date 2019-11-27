@@ -1,0 +1,5 @@
+package com.lf.sino.security;
+
+public class AutenticacaoService {
+
+}

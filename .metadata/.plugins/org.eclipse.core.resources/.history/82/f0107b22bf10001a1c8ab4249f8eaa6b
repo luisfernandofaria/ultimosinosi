@@ -1,0 +1,24 @@
+package com.lf.sino.model;
+
+import java.io.Serializable;
+
+import javax.persistence.Entity;
+
+@SuppressWarnings("serial")
+@Entity
+@Table(name = "PERFIL")
+public class Perfil extends AbstractEntity<Serializable> {
+
+	private String tipoPerfil;
+
+	public String getTipoPerfil() {
+		return tipoPerfil;
+	}
+
+	public void setTipoPerfil(String tipoPerfil) {
+		this.tipoPerfil = tipoPerfil;
+	}
+	
+	
+	
+}
