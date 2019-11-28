@@ -29,11 +29,17 @@ public class AutenticacaoViaTokenFilter extends OncePerRequestFilter {
 	protected void doFilterInternal(HttpServletRequest request, HttpServletResponse response, FilterChain filterChain)
 			throws ServletException, IOException {
 
+		
 		String token = recuperarToken(request);
+		
+		System.out.println("TOKEN NA CLASSE AUTENTICACAOVITOKENFILTER " + token);
+		
 		boolean valido = tokenService.isValido(token);
 		if (valido) {
 			autenticarUsuario(token);
+			System.out.print("TOKEN ACEITO ");
 		}
+		System.out.print("TOKEN INVALIDO - ");
 
 		filterChain.doFilter(request, response);
 	}
@@ -43,6 +49,10 @@ public class AutenticacaoViaTokenFilter extends OncePerRequestFilter {
 		Integer idUsuario = tokenService.getIdUsuario(token);
 		Usuario usuario = usuarioRepository.findById(idUsuario).get();
 
+		System.out.print("nome do usuario encontrado: "+usuario.getNome());
+		System.out.print("nome do usuario encontrado: "+usuario.getEmail());
+
+		
 		UsernamePasswordAuthenticationToken authentication = new UsernamePasswordAuthenticationToken(usuario, null,
 				usuario.getAuthorities());
 		SecurityContextHolder.getContext().setAuthentication(authentication);

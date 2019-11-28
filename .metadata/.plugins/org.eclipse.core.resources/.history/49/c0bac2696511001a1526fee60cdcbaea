@@ -1,0 +1,59 @@
+package com.lf.sino.controller;
+
+import java.util.List;
+
+import javax.validation.Valid;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.ModelMap;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.ModelAttribute;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+import com.lf.sino.model.Denuncia;
+import com.lf.sino.model.Municipio;
+import com.lf.sino.repository.DenunciaRepository;
+import com.lf.sino.repository.LocalAcidenteRepository;
+
+@Controller
+@RequestMapping("/denuncia")
+public class DenunciaController {
+
+	@Autowired
+	DenunciaRepository denunciaRepository;
+
+	@Autowired
+	LocalAcidenteRepository localAcidenteRepository;
+
+	@ModelAttribute("denuncias")
+	public List<Denuncia> listarDenuncias() {
+		return denunciaRepository.findAll();
+	}
+
+	// mapear página de cadastro da denúncia
+	@GetMapping("/cadastrar")
+	public String cadastrarDenuncia(Denuncia denuncia) {
+		return "denuncia/cadastro";
+	}
+
+//	// salvar denúncia
+//	@PostMapping("/salvar")
+//	public String salvarDenuncia(@Valid Denuncia denuncia) {
+//		denunciaRepository.save(denuncia);
+//		return "redirect:/";
+//	}
+
+	// salvar denúncia
+	@PostMapping("/salvar")
+	public String salvarDenuncia(@PathVariable("id") Integer id, ModelMap model, @Valid Denuncia denuncia) {
+		model.addAttribute(localAcidenteRepository.findById(id));
+
+		denunciaRepository.save(denuncia);
+
+		return "redirect:/";
+	}
+
+}

@@ -17,7 +17,7 @@ import com.lf.sino.controller.form.LoginForm;
 import com.lf.sino.security.TokenService;
 
 @RestController
-@RequestMapping("/autenticacao")
+@RequestMapping("/auth")
 public class AutenticacaoController {
 
 	@Autowired
@@ -30,12 +30,23 @@ public class AutenticacaoController {
 	public ResponseEntity<TokenDTO> autenticar(@RequestBody @Valid LoginForm loginForm) {
 
 		UsernamePasswordAuthenticationToken dadosLogin = loginForm.converter();
-
+		System.out.println("dados do login: " + dadosLogin);
+		System.out.println("USUARIOOOOooooooooooooooooooooooooooooooooo");
+		
+		
 		try {
 			Authentication authentication = authManager.authenticate(dadosLogin);
+			
+			System.out.println("dados do login: " + dadosLogin);
 			String token = tokenService.gerarToken(authentication);
+			
+			System.out.print(token + "<---------------- token");
+			
+
 			return ResponseEntity.ok(new TokenDTO(token, "Bearer"));
 		} catch (Exception e) {
+			System.out.println("dados do login: " + dadosLogin);
+
 			return ResponseEntity.badRequest().build();
 		}
 	}

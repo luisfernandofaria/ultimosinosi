@@ -16,7 +16,6 @@ public class LoginForm {
 	}
 
 	public UsernamePasswordAuthenticationToken converter() {
-		// TODO Auto-generated method stub
 		return new UsernamePasswordAuthenticationToken(email, senha);
 	}
 

@@ -1,40 +1,23 @@
 <!DOCTYPE html>
-<html>
+<html xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+	xmlns:th="http://www.thymeleaf.org"
+	layout:decorate="~{fragments/layout}">
 <head>
-    <meta charset="UTF-8"/>
-    <title>Sinosi WEB</title>
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
-    <link type="text/css" rel="stylesheet" href="materialize/css/materialize.min.css"  media="screen,projection"/>
-</head>
-<body class="grey lighten-3">
+<meta charset="UTF-8" />
 
-    <h1 class="main-title center">Sinosi Web</h1>
-    
-    <div class="container center-align">
-    
-    <div class="row center">
-        <div class="col s12 waves-effect waves-light">
-            <a href="/localacidente/cadastrar">
-                <div class="card-panel hoverable z-depth-1 center grey lighten-4">
-                    <i class="large material-icons">perm_identity</i>
-                    <div class="truncate">Registrar Denúncia</div>
-                </div>
-            </a>
-        </div>
-    </div>
-    
-        <div class="row center" >
-        <div class="col s12 waves-effect waves-light">
-            <a href="/localacidente/cadastrar">
-                <div class="card-panel hoverable z-depth-1 center grey lighten-4">
-                    <i class="large material-icons">perm_identity</i>
-                    <div class="truncate">Acompanhar Denúncia</div>
-                </div>
-            </a>
-        </div>
-    </div>
-    </div>
-    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-    <script type="text/javascript" src="materialize/js/materialize.min.js"></script>
+<script type="text/javascript" src="assets/js/lib/jquery-3.2.1.min.js"></script>
+
+<title>Sinosi WEB</title>
+</head>
+<body>
+	<div layout:fragment="content" th:remove="tag">
+		<h1>Sinosi WEB</h1>
+		<p>This is an unsecured page, but you can access the secured pages
+			after authenticating.</p>
+		<ul>
+			<li>Go to the <a href="/admin" th:href="@{/admin}">secured
+					pages</a></li>
+		</ul>
+	</div>
 </body>
 </html>

@@ -10,4 +10,15 @@ public class HomeController {
 	public String home() {
 		return "index";
 	}
+	
+	@GetMapping("admin")
+	public String logar() {
+		return "login";
+	}
+	
+    @GetMapping("acesso-nao-autorizado")
+    public String accessDenied() {
+        return "/erro/acesso-nao-autorizado";
+    }
+
 }

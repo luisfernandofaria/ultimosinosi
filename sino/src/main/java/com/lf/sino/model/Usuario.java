@@ -59,7 +59,6 @@ public class Usuario extends AbstractEntity<Integer> implements UserDetails {
 
 	@Override
 	public Collection<? extends GrantedAuthority> getAuthorities() {
-		// TODO Auto-generated method stub
 		return this.perfis;
 	}
 

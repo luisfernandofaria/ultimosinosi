@@ -60,7 +60,7 @@ public class LocalAcidente extends AbstractEntity<Integer> {
 		return municipio;
 	}
 
-	public void setMunicipios(Municipio municipio) {
+	public void setMunicipio(Municipio municipio) {
 		this.municipio = municipio;
 	}
 

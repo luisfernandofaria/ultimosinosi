@@ -8,9 +8,7 @@ import com.lf.sino.upload.FileSaver;
 import com.lf.sino.upload.FileStorageProperties;
 
 @SpringBootApplication
-@EnableConfigurationProperties({
-    FileStorageProperties.class, FileSaver.class
-})
+@EnableConfigurationProperties({ FileStorageProperties.class, FileSaver.class })
 public class SinoApplication {
 
 	public static void main(String[] args) {

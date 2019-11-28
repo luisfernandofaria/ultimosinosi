@@ -1,0 +1,86 @@
+package com.lf.sino.controller;
+
+import java.util.List;
+
+import javax.validation.Valid;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+import org.springframework.ui.ModelMap;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.ModelAttribute;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
+
+import com.lf.sino.model.Denuncia;
+import com.lf.sino.repository.DenunciaRepository;
+import com.lf.sino.repository.LocalAcidenteRepository;
+
+@Controller
+@RequestMapping("/denuncia")
+public class DenunciaController {
+
+	@Autowired
+	DenunciaRepository denunciaRepository;
+
+	@Autowired
+	LocalAcidenteRepository localAcidenteRepository;
+
+	@RequestMapping(value = "/mostrarDenuncias", method = RequestMethod.GET)
+	public String listar(Model model) throws Exception {
+		try {
+			System.out.println("meotdo para preencher chamado");
+			model.addAttribute("denuncia", denunciaRepository.findAll());
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		return "listaDeDenuncia";
+	}
+
+//	@RequestMapping(value="/mostrarDenuncias", method=RequestMethod.GET)
+//	public ModelAndView showSpecimens() {
+//		ModelAndView modelAndView = new ModelAndView();
+//
+//		try {
+//			List<Denuncia> todasAsDenuncias = denunciaRepository.findAll();
+//			modelAndView.setViewName("mostrarDenuncias");
+//			modelAndView.addObject("todasAsDenuncias", todasAsDenuncias);
+//		} catch (Exception e) {
+//			e.printStackTrace();
+//			modelAndView.setViewName("error");
+//		}
+//		return modelAndView;
+//	}
+
+//	@ModelAttribute("denuncia")
+//	public List<Denuncia> listarDenuncias() {
+//		return denunciaRepository.findAll();
+//	}
+
+	// mapear página de cadastro da denúncia
+	@GetMapping("/cadastrar")
+	public String cadastrarDenuncia(Denuncia denuncia) {
+		return "denuncia/cadastro";
+	}
+
+//	// salvar denúncia
+//	@PostMapping("/salvar")
+//	public String salvarDenuncia(@Valid Denuncia denuncia) {
+//		denunciaRepository.save(denuncia);
+//		return "redirect:/";
+//	}
+
+	// salvar denúncia
+	@PostMapping("/salvar")
+	public String salvarDenuncia(@PathVariable("id") Integer id, ModelMap model, @Valid Denuncia denuncia) {
+		model.addAttribute(localAcidenteRepository.findById(id));
+
+		denunciaRepository.save(denuncia);
+
+		return "redirect:/";
+	}
+
+}

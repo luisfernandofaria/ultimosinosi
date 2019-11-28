@@ -29,6 +29,11 @@ public class SecurityConfigurations extends WebSecurityConfigurerAdapter {
 	@Autowired
 	private UsuarioRepository usuarioRepository;
 
+	// método somente para gerar senha para teste
+//	public static void main(String[] args) {
+//		System.out.println(new BCryptPasswordEncoder().encode("1"));
+//	}
+
 	@Override
 	@Bean
 	protected AuthenticationManager authenticationManager() throws Exception {
@@ -40,17 +45,27 @@ public class SecurityConfigurations extends WebSecurityConfigurerAdapter {
 		auth.userDetailsService(autenticacaoService).passwordEncoder(new BCryptPasswordEncoder());
 	}
 
+	// .antMatchers("/materialize/**, /webjars/**").permitAll()
+
 	@Override
 	protected void configure(HttpSecurity http) throws Exception {
 
-		http.authorizeRequests().antMatchers(HttpMethod.GET, "/actuator/*").permitAll().antMatchers("/materialize/**")
-				.permitAll().antMatchers(HttpMethod.GET, "/localacidente/cadastrar").permitAll()
+		http.authorizeRequests().antMatchers(HttpMethod.GET, "/actuator/*").permitAll()
+
+				.antMatchers("/", "/materialize/**", "/js/**", "/css/**", "/img/**", "/webjars/**").permitAll()
+				.antMatchers(HttpMethod.GET, "/localacidente/cadastrar").permitAll()
 				.antMatchers(HttpMethod.POST, "/localacidente/salvar").permitAll()
 				.antMatchers(HttpMethod.GET, "/denuncia/cadastrar").permitAll()
 				.antMatchers(HttpMethod.POST, "/denuncia/salvar").permitAll().antMatchers(HttpMethod.GET, "/home")
-				.permitAll().antMatchers(HttpMethod.GET, "/rest/denuncias/listarMunicipios").permitAll()
-				.antMatchers(HttpMethod.POST, "/rest/denuncias/enviarDenuncia").permitAll().anyRequest().authenticated()
-				.and().csrf().disable().sessionManagement().sessionCreationPolicy(SessionCreationPolicy.STATELESS).and()
+				.permitAll().antMatchers(HttpMethod.GET, "/denuncia/listaDenuncias").permitAll()
+				.antMatchers(HttpMethod.GET, "/admin").permitAll().antMatchers(HttpMethod.GET, "/temp").permitAll()
+				.antMatchers(HttpMethod.GET, "/acesso-nao-autorizado").permitAll()
+				.antMatchers(HttpMethod.GET, "/rest/denuncias/listarMunicipios").permitAll()
+				.antMatchers(HttpMethod.POST, "/auth").permitAll()
+				.antMatchers(HttpMethod.POST, "/rest/denuncias/enviarDenuncia").permitAll().anyRequest().anonymous()
+				.and().formLogin().and().csrf().disable().sessionManagement()
+				.sessionCreationPolicy(SessionCreationPolicy.STATELESS).and()
+
 				.addFilterBefore(new AutenticacaoViaTokenFilter(tokenService, usuarioRepository),
 						UsernamePasswordAuthenticationFilter.class);
 
@@ -58,19 +73,6 @@ public class SecurityConfigurations extends WebSecurityConfigurerAdapter {
 
 	@Override
 	public void configure(WebSecurity web) throws Exception {
-
-		// super.configure(web);
 	}
-
-//	@Override
-//	protected void configure(HttpSecurity http) throws Exception {
-//		http.authorizeRequests().antMatchers(HttpMethod.GET, "rest/denuncias/listarMunicipios").permitAll()
-//				.antMatchers(HttpMethod.GET, "/").permitAll()
-//				.antMatchers(HttpMethod.POST, "rest/denuncias/enviarDenuncia").permitAll()
-//				.antMatchers(HttpMethod.POST, "/autenticacao").permitAll().anyRequest().authenticated().and().csrf()
-//				.disable().sessionManagement().sessionCreationPolicy(SessionCreationPolicy.STATELESS).and()
-//				.addFilterBefore(new AutenticacaoViaTokenFilter(tokenService, usuarioRepository),
-//						UsernamePasswordAuthenticationFilter.class);
-//	}
 
 }

@@ -1,14 +1,19 @@
 package com.lf.sino.controller;
 
+import java.util.List;
+
 import javax.validation.Valid;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
 
 import com.lf.sino.model.Denuncia;
 import com.lf.sino.repository.DenunciaRepository;
@@ -24,6 +29,13 @@ public class DenunciaController {
 	@Autowired
 	LocalAcidenteRepository localAcidenteRepository;
 
+	@RequestMapping(value = "/temp", method = RequestMethod.GET)
+	public String listar(Model model) throws Exception {
+		model.addAttribute("denuncias", denunciaRepository.findAll());
+
+		return "/denuncia/listaDeDenuncias";
+	}
+
 	// mapear página de cadastro da denúncia
 	@GetMapping("/cadastrar")
 	public String cadastrarDenuncia(Denuncia denuncia) {
@@ -37,17 +49,11 @@ public class DenunciaController {
 //		return "redirect:/";
 //	}
 
-	
 	// salvar denúncia
 	@PostMapping("/salvar")
 	public String salvarDenuncia(@PathVariable("id") Integer id, ModelMap model, @Valid Denuncia denuncia) {
 		model.addAttribute(localAcidenteRepository.findById(id));
 
-		System.out.println("ID:::: " +id);
-		
-		System.out.println();
-		System.out.println("DENÚNCIA dentro do método SALVAR(): " + denuncia);
-		System.out.println();
 		denunciaRepository.save(denuncia);
 
 		return "redirect:/";

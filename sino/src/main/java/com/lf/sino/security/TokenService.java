@@ -15,34 +15,45 @@ import io.jsonwebtoken.SignatureAlgorithm;
 @Service
 public class TokenService {
 
-	@Value("${forum.jwt.expiration}")
-	private String expiraton;
+//	@Value("${forum.jwt.expiration}")
+//	private String expiraton;
+//
+//	@Value("${forum.jwt.secret}")
+//	private String secret;
 
-	@Value("${forum.jwt.secret}")
-	private String secret;
+	// EXPIRATION_TIME = 1 dia
+	private static final long EXPIRATION_TIME = 86400000;
+	private static final String SECRET = "MySecret";
+	// private static final String TOKEN_PREFIX = "Bearer";
+	// private static final String HEADER_STRING = "Authorization";
 
 	public String gerarToken(Authentication authentication) {
 
-		Usuario logado = (Usuario) authentication.getPrincipal();
-		Date hoje = new Date();
-		Date dataExpiracao = new Date(hoje.getTime() + Long.parseLong(expiraton));
+		Usuario usuarioLogado = (Usuario) authentication.getPrincipal();
 
-		return Jwts.builder().setIssuer("API do SINOSI").setSubject(logado.getId().toString()).setIssuedAt(hoje)
-				.setExpiration(dataExpiracao).signWith(SignatureAlgorithm.HS256, secret).compact();
+		System.out.println("USUARIOOOO : " + usuarioLogado.getNome());
+
+		System.out.println("USUARIOOOOooooooooooooooooooooooooooooooooo");
+
+		
+		Date hoje = new Date();
+		Date dataExpiracao = new Date(hoje.getTime() + EXPIRATION_TIME);
+
+		return Jwts.builder().setIssuer("API do SINOSI").setSubject(usuarioLogado.getId().toString()).setIssuedAt(hoje)
+				.setExpiration(dataExpiracao).signWith(SignatureAlgorithm.HS256, SECRET).compact();
 	}
 
 	public boolean isValido(String token) {
 		try {
-			Jwts.parser().setSigningKey(this.secret).parseClaimsJws(token);
+			Jwts.parser().setSigningKey(SECRET).parseClaimsJws(token);
 			return true;
 		} catch (Exception e) {
 			return false;
 		}
-
 	}
 
 	public Integer getIdUsuario(String token) {
-		Claims claims = Jwts.parser().setSigningKey(this.secret).parseClaimsJws(token).getBody();
+		Claims claims = Jwts.parser().setSigningKey(SECRET).parseClaimsJws(token).getBody();
 		return Integer.parseInt(claims.getSubject());
 	}
 
