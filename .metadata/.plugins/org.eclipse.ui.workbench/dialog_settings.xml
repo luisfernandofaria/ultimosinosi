@@ -4,16 +4,12 @@
 		<item key="dialogHeight" value="959"/>
 		<item key="dialogWidth" value="1161"/>
 		<list key="orderedElements">
-			<item value="org.eclipse.jdt.ui.CompilationUnitEditorsino/src/main/java/com/lf/sino/security/SecurityConfigurations.java"/>
 		</list>
 		<list key="orderedProviders">
-			<item value="org.eclipse.ui.editors"/>
 		</list>
 		<list key="textEntries">
-			<item value="1"/>
 		</list>
 		<list key="textArray">
-			<item value="secu"/>
 		</list>
 	</section>
 	<section name="ImportExportAction">
