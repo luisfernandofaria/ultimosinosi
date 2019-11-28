@@ -1,8 +1,9 @@
-# List of external plug-in models previously loaded. Timestamp: 1574828355213
+# List of external plug-in models previously loaded. Timestamp: 1574973378043
 file:/C:/Users/luisf/.p2/pool/plugins/ch.qos.logback.classic_1.0.7.v20121108-1250.jar
 file:/C:/Users/luisf/.p2/pool/plugins/ch.qos.logback.core_1.0.7.v20121108-1250.jar
 file:/C:/Users/luisf/.p2/pool/plugins/ch.qos.logback.slf4j_1.0.7.v201505121915.jar
 file:/C:/Users/luisf/.p2/pool/plugins/com.google.gson_2.8.2.v20180104-1110.jar
+file:/C:/Users/luisf/.p2/pool/plugins/com.google.gson_2.7.0.v20170129-0911.jar
 file:/C:/Users/luisf/.p2/pool/plugins/com.google.guava_21.0.0.v20170206-1425.jar
 file:/C:/Users/luisf/.p2/pool/plugins/com.google.javascript_0.0.20160315.v20161124-1903.jar
 file:/C:/Users/luisf/.p2/pool/plugins/com.google.protobuf_2.4.0.v201105131100.jar
@@ -82,6 +83,9 @@ file:/C:/Users/luisf/.p2/pool/plugins/org.apiguardian_1.0.0.v20190212-2109.jar
 file:/C:/Users/luisf/.p2/pool/plugins/org.bouncycastle.bcpg_1.60.0.v20181210-2057.jar
 file:/C:/Users/luisf/.p2/pool/plugins/org.bouncycastle.bcpkix_1.60.0.v20181210-2057.jar
 file:/C:/Users/luisf/.p2/pool/plugins/org.bouncycastle.bcprov_1.60.0.v20181210-2057.jar
+file:/C:/Users/luisf/.p2/pool/plugins/org.brainwy.liclipsetext.editor_2.1.3.201805051308.jar
+file:/C:/Users/luisf/.p2/pool/plugins/org.brainwy.liclipsetext.shared_core_2.1.3.201805051308.jar
+file:/C:/Users/luisf/.p2/pool/plugins/org.brainwy.liclipsetext.shared_ui_2.1.3.201805051308.jar
 file:/C:/Users/luisf/.p2/pool/plugins/org.eclipse.ant.core_3.5.300.v20190213-1305.jar
 file:/C:/Users/luisf/.p2/pool/plugins/org.eclipse.ant.launching_1.2.400.v20190205-2142.jar
 file:/C:/Users/luisf/.p2/pool/plugins/org.eclipse.ant.ui_3.7.400.v20190218-1426.jar
@@ -925,7 +929,9 @@ file:/C:/Users/luisf/.p2/pool/plugins/org.hamcrest.core_1.3.0.v20180420-1519.jar
 file:/C:/Users/luisf/.p2/pool/plugins/org.jacoco.agent_0.8.3.v20190219-1601.jar
 file:/C:/Users/luisf/.p2/pool/plugins/org.jacoco.core_0.8.3.v20190219-1601.jar
 file:/C:/Users/luisf/.p2/pool/plugins/org.jacoco.report_0.8.3.v20190219-1601.jar
+file:/C:/Users/luisf/.p2/pool/plugins/org.jcodings_1.0.18.v20170306-1742.jar
 file:/C:/Users/luisf/.p2/pool/plugins/org.jdom_1.1.1.v201101151400.jar
+file:/C:/Users/luisf/.p2/pool/plugins/org.joni_2.1.11.v20170306-1742.jar
 file:/C:/Users/luisf/.p2/pool/plugins/org.jsoup_1.7.2.v201411291515.jar
 file:/C:/Users/luisf/.p2/pool/plugins/org.junit_4.12.0.v201504281640/
 file:/C:/Users/luisf/.p2/pool/plugins/org.junit.jupiter.api_5.4.0.v20190212-2109.jar
@@ -940,6 +946,7 @@ file:/C:/Users/luisf/.p2/pool/plugins/org.junit.platform.suite.api_1.4.0.v201902
 file:/C:/Users/luisf/.p2/pool/plugins/org.junit.vintage.engine_5.4.0.v20190212-2109.jar
 file:/C:/Users/luisf/.p2/pool/plugins/org.mozilla.javascript_1.7.5.v201504281450.jar
 file:/C:/Users/luisf/.p2/pool/plugins/org.objectweb.asm_7.0.0.v20181030-2244.jar
+file:/C:/Users/luisf/.p2/pool/plugins/org.objectweb.asm_6.0.0.v20180116-1719.jar
 file:/C:/Users/luisf/.p2/pool/plugins/org.objectweb.asm.commons_7.0.0.v20181030-2244.jar
 file:/C:/Users/luisf/.p2/pool/plugins/org.objectweb.asm.tree_7.0.0.v20181030-2244.jar
 file:/C:/Users/luisf/.p2/pool/plugins/org.opentest4j_1.1.1.v20190212-2109.jar

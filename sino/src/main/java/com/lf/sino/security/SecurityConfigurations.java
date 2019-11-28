@@ -59,10 +59,12 @@ public class SecurityConfigurations extends WebSecurityConfigurerAdapter {
 				.antMatchers(HttpMethod.POST, "/denuncia/salvar").permitAll().antMatchers(HttpMethod.GET, "/home")
 				.permitAll().antMatchers(HttpMethod.GET, "/denuncia/listaDenuncias").permitAll()
 				.antMatchers(HttpMethod.GET, "/admin").permitAll().antMatchers(HttpMethod.GET, "/temp").permitAll()
+				.antMatchers(HttpMethod.GET, "/localacidente/municipios").permitAll()
+				.antMatchers(HttpMethod.GET, "/localacidente/municipio").permitAll()
 				.antMatchers(HttpMethod.GET, "/acesso-nao-autorizado").permitAll()
 				.antMatchers(HttpMethod.GET, "/rest/denuncias/listarMunicipios").permitAll()
 				.antMatchers(HttpMethod.POST, "/auth").permitAll()
-				.antMatchers(HttpMethod.POST, "/rest/denuncias/enviarDenuncia").permitAll().anyRequest().anonymous()
+				.antMatchers(HttpMethod.POST, "/rest/denuncias/enviarDenuncia").permitAll().anyRequest().authenticated()
 				.and().formLogin().and().csrf().disable().sessionManagement()
 				.sessionCreationPolicy(SessionCreationPolicy.STATELESS).and()
 

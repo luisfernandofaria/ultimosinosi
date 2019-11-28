@@ -1,0 +1,25 @@
+package com.lf.sino.controller;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.ModelAttribute;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+import com.lf.sino.model.Municipio;
+import com.lf.sino.repository.MunicipioRepository;
+
+@Controller
+@RequestMapping("/municipios")
+public class MunicipioController {
+
+	@Autowired
+	MunicipioRepository municipioRepository;
+
+	@ModelAttribute
+	public List<Municipio> getMunicipios() {
+		return municipioRepository.findAll();
+	}
+
+}

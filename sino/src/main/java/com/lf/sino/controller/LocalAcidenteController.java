@@ -1,5 +1,6 @@
 package com.lf.sino.controller;
 
+import java.util.ArrayList;
 import java.util.List;
 
 import javax.validation.Valid;
@@ -10,7 +11,6 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.servlet.ModelAndView;
 
 import com.lf.sino.model.LocalAcidente;
@@ -23,17 +23,33 @@ import com.lf.sino.repository.MunicipioRepository;
 public class LocalAcidenteController {
 
 	@Autowired
-	MunicipioRepository municipioRepository;
+	LocalAcidenteRepository localAcidenteRepository;
 
 	@Autowired
-	LocalAcidenteRepository localAcidenteRepository;
+	MunicipioRepository municipioRepository;
+
+//	@RequestMapping("/municipios")
+//	public String getMunicipios(Model model){
+//
+//	    List<Municipio> municipios = municipioRepository.findAll();;
+//	    model.addAttribute("municipio", municipios);
+//	    return "municipios";
+//	}
 
 	// buscar a lista de municípios no banco de dados
 
-	@ModelAttribute("municipios")
-	public List<Municipio> listarMunicipios() {
-		return municipioRepository.findAll();
-	}
+//	@ModelAttribute("/municipios")
+//	public ArrayList<Municipio> listarMunicipios(List<Municipio> municipios) {
+//		return (ArrayList<Municipio>) municipioRepository.findAll();
+//	}
+
+//	@GetMapping("/municipios")
+//	public ModelAndView edit() {
+//		ModelAndView modelAndView = new ModelAndView("municipio");
+//		modelAndView.addObject("municipios", municipioRepository.findAll());
+//
+//		return modelAndView;
+//	}
 
 	// mapear página de cadastro do local do acidente
 	@GetMapping("/cadastrar")

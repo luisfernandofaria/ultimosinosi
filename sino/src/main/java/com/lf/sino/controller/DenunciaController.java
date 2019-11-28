@@ -32,7 +32,6 @@ public class DenunciaController {
 	@RequestMapping(value = "/temp", method = RequestMethod.GET)
 	public String listar(Model model) throws Exception {
 		model.addAttribute("denuncias", denunciaRepository.findAll());
-
 		return "/denuncia/listaDeDenuncias";
 	}
 
