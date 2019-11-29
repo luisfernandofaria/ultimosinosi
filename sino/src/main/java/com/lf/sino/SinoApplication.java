@@ -1,5 +1,6 @@
 package com.lf.sino;
 
+
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.context.properties.EnableConfigurationProperties;
@@ -13,6 +14,10 @@ public class SinoApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(SinoApplication.class, args);
+//		
+//        LOGGER.info("Info level log message");
+//        LOGGER.debug("Debug level log message");
+//        LOGGER.error("Error level log message");
 	}
 
 }

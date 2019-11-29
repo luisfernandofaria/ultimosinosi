@@ -1,61 +1,57 @@
 package com.lf.sino.controller;
 
-import java.util.List;
-
 import javax.validation.Valid;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
-import org.springframework.ui.Model;
-import org.springframework.ui.ModelMap;
+import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.ModelAttribute;
-import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.servlet.ModelAndView;
 
 import com.lf.sino.model.Denuncia;
+import com.lf.sino.model.LocalAcidente;
 import com.lf.sino.repository.DenunciaRepository;
-import com.lf.sino.repository.LocalAcidenteRepository;
+import com.lf.sino.repository.MunicipioRepository;
 
 @Controller
 @RequestMapping("/denuncia")
 public class DenunciaController {
 
+	private static final Logger logger = LoggerFactory.getLogger(LocalAcidenteController.class);
+
 	@Autowired
 	DenunciaRepository denunciaRepository;
 
 	@Autowired
-	LocalAcidenteRepository localAcidenteRepository;
+	MunicipioRepository municipioRepository;
 
-	@RequestMapping(value = "/temp", method = RequestMethod.GET)
-	public String listar(Model model) throws Exception {
-		model.addAttribute("denuncias", denunciaRepository.findAll());
-		return "/denuncia/listaDeDenuncias";
+	@GetMapping("/cadastro")
+	public ModelAndView novo(Denuncia denuncia) {
+		ModelAndView mv = new ModelAndView("denuncia/cadastro");
+		mv.addObject("municipios", municipioRepository.findAll());
+		mv.addObject("localAcidente", new LocalAcidente());
+		return mv;
 	}
 
-	// mapear página de cadastro da denúncia
-	@GetMapping("/cadastrar")
-	public String cadastrarDenuncia(Denuncia denuncia) {
-		return "denuncia/cadastro";
-	}
+	@PostMapping("/cadastro")
+	public ModelAndView salvar(@Valid Denuncia denuncia, BindingResult brDenuncia, @Valid LocalAcidente localAcidente,
+			BindingResult brLocalAcidente) {
 
-//	// salvar denúncia
-//	@PostMapping("/salvar")
-//	public String salvarDenuncia(@Valid Denuncia denuncia) {
-//		denunciaRepository.save(denuncia);
-//		return "redirect:/";
-//	}
+		ModelAndView mv = new ModelAndView("redirect:/denuncia/cadastro");
 
-	// salvar denúncia
-	@PostMapping("/salvar")
-	public String salvarDenuncia(@PathVariable("id") Integer id, ModelMap model, @Valid Denuncia denuncia) {
-		model.addAttribute(localAcidenteRepository.findById(id));
-
+		if (brDenuncia.hasErrors() || brLocalAcidente.hasErrors()) {
+			System.out.println("erooooooooooooo");
+			System.out.println(brDenuncia.getAllErrors());
+			System.out.println(brLocalAcidente.getFieldErrors());
+			return novo(denuncia);
+		}
+		denuncia.setLocalAcidente(localAcidente);
 		denunciaRepository.save(denuncia);
-
-		return "redirect:/";
+		return mv;
 	}
 
 }

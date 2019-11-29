@@ -64,7 +64,7 @@ public class SecurityConfigurations extends WebSecurityConfigurerAdapter {
 				.antMatchers(HttpMethod.GET, "/acesso-nao-autorizado").permitAll()
 				.antMatchers(HttpMethod.GET, "/rest/denuncias/listarMunicipios").permitAll()
 				.antMatchers(HttpMethod.POST, "/auth").permitAll()
-				.antMatchers(HttpMethod.POST, "/rest/denuncias/enviarDenuncia").permitAll().anyRequest().authenticated()
+				.antMatchers(HttpMethod.POST, "/rest/denuncias/enviarDenuncia").permitAll().anyRequest().anonymous()
 				.and().formLogin().and().csrf().disable().sessionManagement()
 				.sessionCreationPolicy(SessionCreationPolicy.STATELESS).and()
 

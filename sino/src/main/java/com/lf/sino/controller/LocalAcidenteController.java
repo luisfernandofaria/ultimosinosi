@@ -1,20 +1,18 @@
 package com.lf.sino.controller;
 
-import java.util.ArrayList;
-import java.util.List;
-
 import javax.validation.Valid;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
+import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.servlet.ModelAndView;
 
 import com.lf.sino.model.LocalAcidente;
-import com.lf.sino.model.Municipio;
 import com.lf.sino.repository.LocalAcidenteRepository;
 import com.lf.sino.repository.MunicipioRepository;
 
@@ -22,44 +20,34 @@ import com.lf.sino.repository.MunicipioRepository;
 @RequestMapping("/localacidente")
 public class LocalAcidenteController {
 
+	private static final Logger logger = LoggerFactory.getLogger(LocalAcidenteController.class);
+
 	@Autowired
 	LocalAcidenteRepository localAcidenteRepository;
 
 	@Autowired
 	MunicipioRepository municipioRepository;
 
-//	@RequestMapping("/municipios")
-//	public String getMunicipios(Model model){
-//
-//	    List<Municipio> municipios = municipioRepository.findAll();;
-//	    model.addAttribute("municipio", municipios);
-//	    return "municipios";
-//	}
+	@GetMapping("/cadastro")
+	public ModelAndView novo(LocalAcidente localAcidente) {
+		ModelAndView mv = new ModelAndView("localacidente/cadastro");
+		mv.addObject("municipios", municipioRepository.findAll());
+		return mv;
+	}
 
-	// buscar a lista de municípios no banco de dados
+	@PostMapping("/cadastro")
+	public ModelAndView salvar(@Valid LocalAcidente localAcidente, BindingResult result) {
 
-//	@ModelAttribute("/municipios")
-//	public ArrayList<Municipio> listarMunicipios(List<Municipio> municipios) {
-//		return (ArrayList<Municipio>) municipioRepository.findAll();
-//	}
+		if (result.hasErrors()) {
+			return novo(localAcidente);
+		}
 
-//	@GetMapping("/municipios")
-//	public ModelAndView edit() {
-//		ModelAndView modelAndView = new ModelAndView("municipio");
-//		modelAndView.addObject("municipios", municipioRepository.findAll());
-//
-//		return modelAndView;
-//	}
-
-	// mapear página de cadastro do local do acidente
-	@GetMapping("/cadastrar")
-	public String cadastrarLocalAcidente(LocalAcidente localAcidente) {
-		return "localacidente/cadastro";
+		return new ModelAndView("redirect:/localacidente/cadastro");
 	}
 
 	// salvar local do acidente
 	@PostMapping("/salvar")
-	public ModelAndView salvarLocalAcidente(@Valid LocalAcidente localAcidente) {
+	public ModelAndView salvarLocalAcidente(LocalAcidente localAcidente) {
 		localAcidenteRepository.save(localAcidente);
 		return new ModelAndView("redirect:/denuncia/cadastrar");
 	}

@@ -1,0 +1,67 @@
+package com.lf.sino.controller;
+
+import java.util.List;
+
+import javax.validation.Valid;
+
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+import org.springframework.validation.BindingResult;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.servlet.ModelAndView;
+
+import com.lf.sino.model.LocalAcidente;
+import com.lf.sino.model.Municipio;
+import com.lf.sino.repository.LocalAcidenteRepository;
+import com.lf.sino.repository.MunicipioRepository;
+
+@Controller
+@RequestMapping("/localacidente")
+public class LocalAcidenteController {
+
+	private static final Logger logger = LoggerFactory.getLogger(LocalAcidenteController.class);
+
+	@Autowired
+	LocalAcidenteRepository localAcidenteRepository;
+
+	@Autowired
+	MunicipioRepository municipioRepository;
+
+	@GetMapping("/cadastrar")
+	public String novo(LocalAcidente localAcidente, Model model) {
+		
+		logger.error("nivel erro");
+		
+		List<Municipio> municipios = municipioRepository.findAll();
+		model.addAttribute("municipios", municipios);
+
+		
+		return "localacidente/cadastro";
+	}
+
+	@PostMapping("/cadastrar")
+	public String salvar(@Valid LocalAcidente localAcidente, Model model, BindingResult result) {
+
+		if (result.hasErrors()) {
+			return novo(localAcidente, model);
+		}
+
+		List<Municipio> municipios = municipioRepository.findAll();
+		model.addAttribute("municipios", municipios);
+
+		return "localacidente/cadastro";
+	}
+
+	// salvar local do acidente
+	@PostMapping("/salvar")
+	public ModelAndView salvarLocalAcidente(@Valid LocalAcidente localAcidente) {
+		localAcidenteRepository.save(localAcidente);
+		return new ModelAndView("redirect:/denuncia/cadastrar");
+	}
+
+}
