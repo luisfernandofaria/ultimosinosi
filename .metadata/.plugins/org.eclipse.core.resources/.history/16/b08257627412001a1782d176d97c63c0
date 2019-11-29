@@ -14,6 +14,8 @@
 </head>
 <body class="grey lighten-3">
 
+
+
 	<div id="formDenuncia" class="container">
 
 		<h3 class="main-title center">Informe a localização:</h3>
@@ -29,7 +31,7 @@
 					<div class="row">
 						<div class="input-field col s12">
 							<label for="municipio"></label> <select class="browser-default"
-								th:field="*{municipio}">
+								th:field="*${municipios}">
 								<option value="">Cidade</option>
 								<option th:each="m : ${municipios}" th:value="${m.id}"
 									th:text=" ${m.uf + ' - '} + ${m.nome}" th:selected="${m.id}">Selecione...</option>
