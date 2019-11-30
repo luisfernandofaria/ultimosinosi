@@ -44,7 +44,7 @@ public class DenunciaRestController {
 
 		String fileName = fileStorageService.storeFile(file);
 
-		denuncia.setCaminhoFoto(fileName);
+		denuncia.setFoto(fileName);
 		denunciaRepository.save(denuncia);
 	}
 

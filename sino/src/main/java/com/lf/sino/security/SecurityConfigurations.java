@@ -50,22 +50,26 @@ public class SecurityConfigurations extends WebSecurityConfigurerAdapter {
 	@Override
 	protected void configure(HttpSecurity http) throws Exception {
 
-		http.authorizeRequests().antMatchers(HttpMethod.GET, "/actuator/*").permitAll()
-
+		http.authorizeRequests()
+		
+				.antMatchers(HttpMethod.GET, "/actuator/*").permitAll()
 				.antMatchers("/", "/materialize/**", "/js/**", "/css/**", "/img/**", "/webjars/**").permitAll()
 				.antMatchers(HttpMethod.GET, "/localacidente/cadastrar").permitAll()
 				.antMatchers(HttpMethod.POST, "/localacidente/salvar").permitAll()
 				.antMatchers(HttpMethod.GET, "/denuncia/cadastrar").permitAll()
-				.antMatchers(HttpMethod.POST, "/denuncia/salvar").permitAll().antMatchers(HttpMethod.GET, "/home")
-				.permitAll().antMatchers(HttpMethod.GET, "/denuncia/listaDenuncias").permitAll()
-				.antMatchers(HttpMethod.GET, "/admin").permitAll().antMatchers(HttpMethod.GET, "/temp").permitAll()
+				.antMatchers(HttpMethod.POST, "/denuncia/salvar").permitAll()
+				.antMatchers(HttpMethod.GET, "/home").permitAll()
+				.antMatchers(HttpMethod.GET, "/denuncia/listaDenuncias").permitAll()
+				.antMatchers(HttpMethod.GET, "/admin").permitAll()
+				.antMatchers(HttpMethod.GET, "/temp").permitAll()
 				.antMatchers(HttpMethod.GET, "/localacidente/municipios").permitAll()
 				.antMatchers(HttpMethod.GET, "/localacidente/municipio").permitAll()
 				.antMatchers(HttpMethod.GET, "/acesso-nao-autorizado").permitAll()
 				.antMatchers(HttpMethod.GET, "/rest/denuncias/listarMunicipios").permitAll()
 				.antMatchers(HttpMethod.POST, "/auth").permitAll()
-				.antMatchers(HttpMethod.POST, "/rest/denuncias/enviarDenuncia").permitAll().anyRequest().anonymous()
-				.and().formLogin().and().csrf().disable().sessionManagement()
+				.antMatchers(HttpMethod.POST, "/rest/denuncias/enviarDenuncia").permitAll()
+				
+				.anyRequest().anonymous().and().formLogin().and().csrf().disable().sessionManagement()
 				.sessionCreationPolicy(SessionCreationPolicy.STATELESS).and()
 
 				.addFilterBefore(new AutenticacaoViaTokenFilter(tokenService, usuarioRepository),
@@ -76,5 +80,33 @@ public class SecurityConfigurations extends WebSecurityConfigurerAdapter {
 	@Override
 	public void configure(WebSecurity web) throws Exception {
 	}
+	
+	
+//	@Override
+//	protected void configure(HttpSecurity http) throws Exception {
+//
+//		http.authorizeRequests().antMatchers(HttpMethod.GET, "/actuator/*").permitAll()
+//
+//				.antMatchers("/", "/materialize/**", "/js/**", "/css/**", "/img/**", "/webjars/**").permitAll()
+//				.antMatchers(HttpMethod.GET, "/localacidente/cadastrar").permitAll()
+//				.antMatchers(HttpMethod.POST, "/localacidente/salvar").permitAll()
+//				.antMatchers(HttpMethod.GET, "/denuncia/cadastrar").permitAll()
+//				.antMatchers(HttpMethod.POST, "/denuncia/salvar").permitAll().antMatchers(HttpMethod.GET, "/home")
+//				.permitAll().antMatchers(HttpMethod.GET, "/denuncia/listaDenuncias").permitAll()
+//				.antMatchers(HttpMethod.GET, "/admin").permitAll().antMatchers(HttpMethod.GET, "/temp").permitAll()
+//				.antMatchers(HttpMethod.GET, "/localacidente/municipios").permitAll()
+//				.antMatchers(HttpMethod.GET, "/localacidente/municipio").permitAll()
+//				.antMatchers(HttpMethod.GET, "/acesso-nao-autorizado").permitAll()
+//				.antMatchers(HttpMethod.GET, "/rest/denuncias/listarMunicipios").permitAll()
+//				.antMatchers(HttpMethod.POST, "/auth").permitAll()
+//				.antMatchers(HttpMethod.POST, "/rest/denuncias/enviarDenuncia").permitAll().anyRequest().anonymous()
+//				.and().formLogin().and().csrf().disable().sessionManagement()
+//				.sessionCreationPolicy(SessionCreationPolicy.STATELESS).and()
+//
+//				.addFilterBefore(new AutenticacaoViaTokenFilter(tokenService, usuarioRepository),
+//						UsernamePasswordAuthenticationFilter.class);
+//
+//	}
+	
 
 }

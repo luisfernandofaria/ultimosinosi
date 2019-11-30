@@ -34,7 +34,9 @@ public class Denuncia extends AbstractEntity<Integer> {
 	private LocalDateTime dataDenuncia;
 
 	@Column(nullable = true, length = 200)
-	private String caminhoFoto;
+	private String foto;
+
+	private String contentType;
 
 	@Column(nullable = true, length = 60)
 	private String autorDano;
@@ -73,12 +75,12 @@ public class Denuncia extends AbstractEntity<Integer> {
 		this.dataDenuncia = dataDenuncia;
 	}
 
-	public String getCaminhoFoto() {
-		return caminhoFoto;
+	public String getFoto() {
+		return foto;
 	}
 
-	public void setCaminhoFoto(String foto) {
-		this.caminhoFoto = foto;
+	public void setFoto(String foto) {
+		this.foto = foto;
 	}
 
 	public String getAutorDano() {
@@ -108,8 +110,16 @@ public class Denuncia extends AbstractEntity<Integer> {
 	@Override
 	public String toString() {
 		return "Denuncia [localAcidente=" + localAcidente + ", descricao=" + descricao + ", dataDenuncia="
-				+ dataDenuncia + ", foto=" + caminhoFoto + ", autorDano=" + autorDano + ", emailUsuario=" + emailUsuario
+				+ dataDenuncia + ", foto=" + foto + ", autorDano=" + autorDano + ", emailUsuario=" + emailUsuario
 				+ ", categoria=" + categoria + "]";
+	}
+
+	public String getContentType() {
+		return contentType;
+	}
+
+	public void setContentType(String contentType) {
+		this.contentType = contentType;
 	}
 
 }

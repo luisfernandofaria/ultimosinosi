@@ -1,0 +1,40 @@
+package com.lf.sino.security;
+
+import java.util.Optional;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.core.userdetails.UserDetails;
+import org.springframework.security.core.userdetails.UserDetailsService;
+import org.springframework.security.core.userdetails.UsernameNotFoundException;
+import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
+import org.springframework.stereotype.Service;
+
+import com.lf.sino.model.Usuario;
+import com.lf.sino.repository.UsuarioRepository;
+
+@Service
+public class AutenticacaoService implements UserDetailsService {
+
+	@Autowired
+	UsuarioRepository usuarioRepository;
+
+	@Autowired
+	private BCryptPasswordEncoder bcryptEncoder;
+
+	@Override
+	public UserDetails loadUserByUsername(String email) throws UsernameNotFoundException {
+		Optional<Usuario> usuario = usuarioRepository.findByEmail(email);
+
+		if (usuario.isPresent()) {
+			return usuario.get();
+		}
+
+		throw new UsernameNotFoundException("Usuario não encontrado!");
+	}
+
+	public Usuario save(Usuario usuario) {
+		usuario.setSenha(bcryptEncoder.encode(usuario.getPassword()));
+		return usuarioRepository.save(usuario);
+	}
+
+}

@@ -1,0 +1,47 @@
+package com.lf.sino.service;
+
+import java.io.IOException;
+import java.nio.file.FileSystems;
+import java.nio.file.Files;
+import java.nio.file.Path;
+
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+import org.springframework.stereotype.Component;
+
+@Component
+public class FotoStorageLocal {
+
+	private static final Logger logger = LoggerFactory.getLogger(FotoStorageLocal.class);
+
+	private Path local;
+	private Path localTemp;
+
+	public FotoStorageLocal() {
+
+		this(FileSystems.getDefault().getPath(System.getenv("HOME"), "sinosifotos"));
+	}
+
+	public FotoStorageLocal(Path path) {
+
+		this.local = path;
+		criarPastas();
+	}
+
+	private void criarPastas() {
+		try {
+			Files.createDirectories(this.local);
+
+			this.localTemp = getDefault().getPath(this.local.toString(), "temp");
+			Files.createDirectories(this.localTemp);
+
+			if (logger.isDebugEnabled()) {
+				logger.debug("Pastas criadas para salvar fotos.");
+				logger.debug("Pasta default: " + this.local.toAbsolutePath());
+			}
+		} catch (IOException e) {
+			throw new RuntimeException("Erro criando pasta para salvar foto", e);
+		}
+	}
+
+}

@@ -44,13 +44,17 @@ public class DenunciaController {
 		ModelAndView mv = new ModelAndView("redirect:/denuncia/cadastro");
 
 		if (brDenuncia.hasErrors() || brLocalAcidente.hasErrors()) {
-			System.out.println("erooooooooooooo");
-			System.out.println(brDenuncia.getAllErrors());
-			System.out.println(brLocalAcidente.getFieldErrors());
 			return novo(denuncia);
 		}
 		denuncia.setLocalAcidente(localAcidente);
 		denunciaRepository.save(denuncia);
+		return mv;
+	}
+
+	@GetMapping("/listar")
+	public ModelAndView listarDenuncias(Denuncia denuncia) {
+		ModelAndView mv = new ModelAndView("denuncia/listar");
+		mv.addObject("denuncias", denunciaRepository.findAll());
 		return mv;
 	}
 

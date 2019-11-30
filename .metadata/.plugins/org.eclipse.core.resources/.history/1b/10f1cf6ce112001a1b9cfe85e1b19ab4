@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8" />
+<link type="text/css" rel="stylesheet"
+	href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css"
+	media="screen,projection" />
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+	rel="stylesheet" />
+<!-- UIkit CSS -->
+<link rel="stylesheet"
+	href="https://cdn.jsdelivr.net/npm/uikit@3.2.3/dist/css/uikit.min.css" />
+<title>Sinosi WEB</title>
+<script type="text/javascript"
+	src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+
+</head>
+<body class="grey lighten-3">
+
+	<div id="formDenuncia" class="container">
+
+		<h3 class="main-title center">Informe a localização:</h3>
+		<div class="row">
+
+			<form class="col s12" action="#" th:action="@{/denuncia/cadastro}"
+				th:object="${denuncia}" method="POST">
+
+
+				<th:block th:include="fragments/errors"></th:block>
+
+				<div class="section" th:object="${localAcidente}">
+					<h5>Preencha os dados:</h5>
+
+					<div class="row">
+						<div class="input-field col s12">
+							<label for="municipio"></label> <select class="browser-default"
+								th:field="*{municipio}">
+								<option value="">Cidade</option>
+								<option th:each="m : ${municipios}" th:value="${m.id}"
+									th:text=" ${m.uf + ' - '} + ${m.nome}" th:selected="${m.id}">Selecione...</option>
+							</select>
+						</div>
+
+						<div class="row">
+							<div class="input-field col s12">
+								<input id="longitude" type="text" th:field="*{longitude}" /> <label
+									for="longitude">Longitude</label>
+							</div>
+						</div>
+						<div class="row">
+							<div class="input-field col s12">
+								<input id="latitude" type="text" th:field="*{latitude}" /> <label
+									for="latitude">latitude</label>
+							</div>
+						</div>
+
+						<div class="row">
+							<div class="input-field col s12">
+								<input id="endereco" type="text" th:field="*{endereco}" /> <label
+									for="endereco">Endereço</label>
+							</div>
+						</div>
+						<div class="row">
+							<div class="input-field col s12">
+								<input id="cep" type="text" th:field="*{cep}" /> <label
+									for="cep">Cep</label>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<h3 class="main-title center">Informe os dados da denúncia:</h3>
+
+				<h5>Preencha os dados:</h5>
+
+				<div class="row">
+					<div class="input-field col s12">
+						<input id="categoria" type="text" th:field="*{categoria}" /> <label
+							for="categoria">Categoria</label>
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="input-field col s12">
+						<input id="descricao" type="text" th:field="*{descricao}" /> <label
+							for="descricao">Descrição</label>
+					</div>
+				</div>
+				<div class="row">
+					<div class="input-field col s12">
+
+
+						<input id="dataDenuncia" type="text" th:field="*{dataDenuncia}"
+							th:value="${#dates.format(#dates.createNow(),'dd/MM/yyyy HH:mm')}"
+							th:text="${#dates.format(#dates.createNow(),'dd/MM/yyyy HH:mm')}" />
+						<label for="dataDenuncia">Data</label>
+					</div>
+					<div class="row">
+						<div class="input-field col s12">
+							<input id="autorDano" type="text" th:field="*{autorDano}" /> <label
+								for="autorDano">Autor do Dano</label>
+						</div>
+					</div>
+					<div class="row">
+						<div class="input-field col s12">
+							<input id="emailUsuario" type="text" th:field="*{emailUsuario}" />
+							<label for="emailUsuario">seu email se quiser</label>
+						</div>
+					</div>
+
+					<div class="row">
+						<div class="form-group col-sm-12">
+							<label for="foto">Foto</label>
+							<div>
+
+
+								<div class="js-upload uk-placeholder uk-text-center">
+
+									 <span
+										uk-icon="icon: cloud-upload"></span> <span
+										class="uk-text-middle">Arraste a imagem</span>
+									<div uk-form-custom>
+										<input type="file" multiple> 
+										<input type="hidden" th:field="*{foto}"> <input
+										type="hidden" th:field="*{contentType}">
+										
+										<span class="uk-link">ou
+											clique aqui para buscar</span>
+									</div>
+								</div>
+								<progress id="js-progressbar" class="uk-progress" value="0"
+									max="100" hidden></progress>
+							</div>
+						</div>
+					</div>
+				</div>
+		</div>
+		<!-- Fim SECTION Dados Basicos -->
+
+		<div class="row">
+			<div class="input-field col s12 center">
+
+				<button class="btn waves-effect waves-light" type="reset"
+					onclick="goBack()">Voltar</button>
+
+				<button class="btn waves-effect waves-light" type="submit"
+					name="action">Finalizar Denúncia</button>
+			</div>
+		</div>
+
+
+		</form>
+	</div>
+
+	</div>
+	<!-- Fim do formulario de edicao -->
+
+	<script>
+		function goBack() {
+			window.history.back();
+		}
+	</script>
+
+	<!-- UIkit JS -->
+	<script
+		src="https://cdn.jsdelivr.net/npm/uikit@3.2.3/dist/js/uikit.min.js"></script>
+	<script
+		src="https://cdn.jsdelivr.net/npm/uikit@3.2.3/dist/js/uikit-icons.min.js"></script>
+
+	<script>
+		var bar = document.getElementById('js-progressbar');
+
+		UIkit.upload('.js-upload', {
+
+			type : 'json',
+			url : '/fotos',
+			multiple : false,
+
+		      beforeSend: function (environment) {
+		            console.log('beforeSend', arguments);
+		        },
+		        beforeAll: function () {
+		            console.log('beforeAll', arguments);
+		        },
+		        load: function () {
+		            console.log('load', arguments);
+		        },
+		        error: function () {
+		            console.log('error', arguments);
+		        },
+		        complete: function () {
+		            console.log('complete', arguments);
+		        },
+
+		        loadStart: function (e) {
+		            console.log('loadStart', arguments);
+
+		            bar.removeAttribute('hidden');
+		            bar.max = e.total;
+		            bar.value = e.loaded;
+		        },
+
+		        progress: function (e) {
+		            console.log('progress', arguments);
+
+		            bar.max = e.total;
+		            bar.value = e.loaded;
+		        },
+
+		        loadEnd: function (e) {
+		            console.log('loadEnd', arguments);
+
+		            bar.max = e.total;
+		            bar.value = e.loaded;
+		        },
+
+		        completeAll: function (resposta) {
+		            console.log('completeAll', arguments);
+					$('input[name=foto]').val(resposta.nomeArquivo);
+					$('input[name=contentType]').val(resposta.contentType);
+		            setTimeout(function () {
+		                bar.setAttribute('hidden', 'hidden');
+		            }, 1000);
+		        }
+
+		    });
+	</script>
+	<script type="text/javascript"
+		src="../materialize/js/materialize.min.js"></script>
+</body>
+</html>
+

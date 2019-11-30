@@ -1,0 +1,63 @@
+package com.lf.sino.service;
+
+import java.io.File;
+import java.io.IOException;
+import java.nio.file.FileSystems;
+import java.nio.file.Files;
+import java.nio.file.Path;
+
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+import org.springframework.stereotype.Component;
+import org.springframework.web.multipart.MultipartFile;
+
+@Component
+public class FotoStorageLocal {
+
+	private static final Logger logger = LoggerFactory.getLogger(FotoStorageLocal.class);
+
+	private Path local;
+	private Path localTemp;
+
+	public FotoStorageLocal() {
+
+		this(FileSystems.getDefault().getPath(System.getenv("HOME"), "sinosifotos"));
+	}
+
+	public FotoStorageLocal(Path path) {
+
+		this.local = path;
+		criarPastas();
+	}
+
+	private void criarPastas() {
+		try {
+			Files.createDirectories(this.local);
+
+			this.localTemp = FileSystems.getDefault().getPath(this.local.toString(), "temp");
+
+			Files.createDirectories(this.localTemp);
+
+			if (logger.isDebugEnabled()) {
+				logger.debug("Pastas criadas para salvar fotos.");
+				logger.debug("Pasta default: " + this.local.toAbsolutePath());
+			}
+		} catch (IOException e) {
+			throw new RuntimeException("Erro criando pasta para salvar foto", e);
+		}
+	}
+
+	public void salvarTemporariamente(MultipartFile[] files) {
+		if (files != null && files.length > 0) {
+			MultipartFile arquivo = files[0];
+			try {
+				arquivo.transferTo(new File(this.localTemp.toAbsolutePath().toString()
+						+ FileSystems.getDefault().getSeparator() + arquivo.getOriginalFilename()));
+			} catch (Exception e) {
+				throw new RuntimeException("erro sao salvar na pasta temp", e);
+			}
+
+		}
+	}
+
+}
