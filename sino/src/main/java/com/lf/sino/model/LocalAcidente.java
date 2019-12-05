@@ -15,10 +15,10 @@ import javax.validation.constraints.Size;
 public class LocalAcidente extends AbstractEntity<Integer> {
 
 	@Column(nullable = true, length = 60)
-//	@Pattern(regexp = "^[-+]?([1-8]?\\d(\\.\\d+)?|90(\\.0+)?),\\s*[-+]?(180(\\.0+)?|((1[0-7]\\d)|([1-9]?\\d))(\\.\\d+)?)$")
+	@Pattern(regexp = "^(\\+|-)?(?:90(?:(?:\\.0{1,6})?)|(?:[0-9]|[1-8][0-9])(?:(?:\\.[0-9]{1,6})?))$")
 	private String latitude;
 
-//	@Pattern(regexp = "^[-+]?([1-8]?\\d(\\.\\d+)?|90(\\.0+)?),\\s*[-+]?(180(\\.0+)?|((1[0-7]\\d)|([1-9]?\\d))(\\.\\d+)?)$")
+	@Pattern(regexp = "^(\\\\+|-)?(?:180(?:(?:\\\\.0{1,6})?)|(?:[0-9]|[1-9][0-9]|1[0-7][0-9])(?:(?:\\\\.[0-9]{1,6})?))$")
 	private String longitude;
 
 	@Column(nullable = true, length = 60)
@@ -31,7 +31,7 @@ public class LocalAcidente extends AbstractEntity<Integer> {
 
 	@Column(nullable = true, length = 8)
 	@Size(min = 0, max = 8)
-//	@Pattern(regexp = "^(([0-9]{2}\\.[0-9]{3}-[0-9]{3})|([0-9]{2}[0-9]{3}-[0-9]{3})|([0-9]{8}))$")
+	@Pattern(regexp = "^(([0-9]{2}\\.[0-9]{3}-[0-9]{3})|([0-9]{2}[0-9]{3}-[0-9]{3})|([0-9]{8}))$")
 	private String cep;
 
 	public LocalAcidente() {

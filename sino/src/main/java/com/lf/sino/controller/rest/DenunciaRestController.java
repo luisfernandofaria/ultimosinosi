@@ -34,10 +34,10 @@ public class DenunciaRestController {
 		return municipioRepository.findAll();
 	}
 
-	@GetMapping("/listarDenuncias")
-	public List<Denuncia> listarDenuncias() {
-		return denunciaRepository.findAll();
-	}
+//	@GetMapping("/listarDenuncias")
+//	public List<Denuncia> listarDenuncias() {
+//		return denunciaRepository.findAll();
+//	}
 
 	@PostMapping(value = "/enviarDenuncia", consumes = { "multipart/form-data" })
 	public void upload(@RequestPart("denuncia") Denuncia denuncia, @RequestPart("file") MultipartFile file) {

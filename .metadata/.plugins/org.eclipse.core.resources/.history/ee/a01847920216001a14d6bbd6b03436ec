@@ -1,0 +1,33 @@
+package com.lf.sino.service;
+
+import java.util.Optional;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.core.userdetails.UserDetails;
+import org.springframework.security.core.userdetails.UserDetailsService;
+import org.springframework.security.core.userdetails.UsernameNotFoundException;
+import org.springframework.stereotype.Service;
+
+import com.lf.sino.model.Usuario;
+import com.lf.sino.repository.UsuarioRepository;
+
+@Service(value = "usuarioService")
+public class UsuarioService implements UserDetailsService {
+
+	@Autowired
+	private UsuarioRepository usuarioRepository;
+
+	@Override
+	public UserDetails loadUserByUsername(String email) {
+		Optional<Usuario> opt = usuarioRepository.findByEmail(email);
+		Usuario usuario = null;
+		if (opt.isPresent()) {
+			usuario = opt.get();
+		}
+		if (usuario == null) {
+			throw new UsernameNotFoundException(email + "Usuario não encontrado!");
+		}
+		return usuario;
+	}
+
+}

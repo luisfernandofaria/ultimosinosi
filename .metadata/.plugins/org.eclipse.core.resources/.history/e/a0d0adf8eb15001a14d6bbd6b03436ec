@@ -1,0 +1,38 @@
+package com.lf.sino.controller;
+
+import org.springframework.security.core.annotation.AuthenticationPrincipal;
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.GetMapping;
+
+import com.lf.sino.model.Usuario;
+
+@Controller
+public class HomeController {
+
+	@GetMapping("/")
+	public String home() {
+		return "index2";
+	}
+
+//	@GetMapping("/login")
+//	public String logar(  ) {
+//		return "login";
+//	}
+
+	
+	@GetMapping("/login")
+	public String logar(@AuthenticationPrincipal Usuario usuario) {
+
+//		if (usuario != null) {
+//			return "redirect:/";
+//		}
+
+		return "login";
+	}
+
+	@GetMapping("acesso-nao-autorizado")
+	public String accessDenied() {
+		return "/erro/acesso-nao-autorizado";
+	}
+
+}
